@@ -1,0 +1,22 @@
+# build
+dist/
+# dépendances
+node_modules/
+# astro
+.astro/
+# environnement
+.env
+.env.production
+# os / éditeurs
+.DS_Store
+*:Zone.Identifier
+portfolio-maquettes/icones.html
+portfolio-maquettes/parcours.html
+portfolio-maquettes/projet-ndako-tech.html
+portfolio-maquettes/projets.html
+portfolio-maquettes/index.html
+portfolio-maquettes/projet-ouverture-compte.html
+portfolio-maquettes/projet-bracovoit.html
+portfolio-maquettes/projet-tableau-de-bord.html
+portfolio-maquettes/livrables
+public/livrables

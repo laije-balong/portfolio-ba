@@ -1,0 +1,12 @@
+body{margin:0;background:#FBFBF9}
+a{color:#17191A}
+a:hover{color:#3F6B57}
+.card{transition:border-color .2s ease}
+.card:hover{border-color:#B9C9BF}
+.btn{transition:background-color .2s ease, border-color .2s ease}
+.btn-main:hover{background:#2F5444 !important;color:#FFFFFF !important}
+.btn-line:hover{border-color:#17191A !important;color:#17191A !important}
+.lnk{text-decoration:none;border-bottom:1px solid #C9D3CC;padding-bottom:2px;transition:border-color .2s ease}
+.lnk:hover{border-color:#3F6B57}
+.chip{transition:background-color .2s ease, border-color .2s ease}
+@media (prefers-reduced-motion: reduce){.card,.btn,.lnk,.chip{transition:none}}

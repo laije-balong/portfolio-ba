@@ -1,0 +1,283 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectNav from '../components/ProjectNav.astro';
+---
+<BaseLayout
+  title="BraCovoit, Laije Belthassar BALONG"
+  description="Simulation d'entreprise : cahier des charges, 2 processus BPMN, 18 user stories et un backlog en 2 sprints pour un covoiturage entre quartiers de Brazzaville."
+  active="projets"
+>
+
+<p style="margin: 40px 0 0; font-size: 14px; color: #5B6160"><a href="/projets" class="lnk">Projets</a><span aria-hidden="true" style="margin: 0 10px">/</span>BraCovoit</p>
+
+<section style="padding: 32px 0 56px">
+<p style="margin: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Cahier des charges</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Modélisation BPMN</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">User stories</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #F1F2EF; color: #4A504E; font-size: 13px">Mobilité urbaine</span>
+</p>
+<h1 style="margin: 24px 0 0; font-weight: 600; font-size: 56px; line-height: 1.06; letter-spacing: -0.03em">BraCovoit</h1>
+<p style="margin: 24px 0 0; max-width: 60ch; font-size: 20px; line-height: 1.5; color: #4A504E">Un covoiturage entre quartiers de Brazzaville : un conducteur qui va dans la même direction, un prix connu avant de partir. J'ai traduit la discovery de l'équipe en cahier des charges, en processus et en backlog prêt pour le développement.</p>
+
+<ul style="list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px; margin: 40px 0 0; padding: 0">
+<li style="display: flex; align-items: center; gap: 14px; padding: 14px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<span aria-hidden="true" style="flex: none; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 13px; background: #FBFBF9; border: 1px solid #E3E5E1"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="5" width="16" height="15" rx="1.8" fill="#E2ECE5"></rect><path d="M4 10h16M9 3v4M15 3v4"></path><rect x="13.5" y="13.5" width="3" height="3" rx=".7" fill="#3F6B57" stroke="none"></rect></svg></span>
+<span><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Date</span><span style="display: block; font-weight: 500">Juillet 2026</span></span>
+</li>
+<li style="display: flex; align-items: center; gap: 14px; padding: 14px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<span aria-hidden="true" style="flex: none; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 13px; background: #FBFBF9; border: 1px solid #E3E5E1"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="2.6" fill="#E2ECE5"></circle><circle cx="5.5" cy="10" r="2" fill="#E2ECE5"></circle><circle cx="18.5" cy="10" r="2" fill="#E2ECE5"></circle><path d="M2.5 18.5c0-1.7 1.3-3 3-3M21.5 18.5c0-1.7-1.3-3-3-3"></path><path d="M8 19.5c0-2.2 1.8-4 4-4s4 1.8 4 4" stroke="#3F6B57"></path></svg></span>
+<span><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Contexte</span><span style="display: block; font-weight: 500">Simulation d'entreprise, Akieni Academy</span></span>
+</li>
+<li style="display: flex; align-items: center; gap: 14px; padding: 14px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<span aria-hidden="true" style="flex: none; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 13px; background: #FBFBF9; border: 1px solid #E3E5E1"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9.5" cy="8" r="3" fill="#E2ECE5"></circle><path d="M3.5 19.5c0-3.3 2.7-5.5 6-5.5 1.3 0 2.5.3 3.5.9"></path><path d="M16 20.5v-7h4.5l-1.2 1.75 1.2 1.75H16" stroke="#3F6B57"></path></svg></span>
+<span><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Rôle</span><span style="display: block; font-weight: 500">Business Analyst, binôme BA de l'équipe Cypher</span></span>
+</li>
+<li style="display: flex; align-items: center; gap: 14px; padding: 14px; border-radius: 16px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<span aria-hidden="true" style="flex: none; display: inline-flex; align-items: center; justify-content: center; width: 48px; height: 48px; border-radius: 13px; background: #FBFBF9; border: 1px solid #E3E5E1"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13.5v5a1.5 1.5 0 0 1-1.5 1.5h-11A1.5 1.5 0 0 1 4 18.5v-11A1.5 1.5 0 0 1 5.5 6h5" fill="#E2ECE5"></path><path d="M14 4h6v6M20 4l-8.5 8.5" stroke="#3F6B57"></path></svg></span>
+<span><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Site de l'équipe</span><a href="https://loriontsiba-debug.github.io/s8-Cypher-CypherRide/" style="display: block; font-weight: 500; text-decoration: none">Voir BraCovoit en ligne</a></span>
+</li>
+</ul>
+
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px">
+<a href="#livrables" class="btn btn-main" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px">Voir les livrables</a>
+<a href="#processus" class="btn btn-line" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; border: 1px solid #D5D9D4; color: #17191A; text-decoration: none; font-weight: 500; font-size: 16px">Voir les processus</a>
+</div>
+</section>
+
+<section aria-label="Chiffres clés" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; padding-bottom: 88px">
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">13</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">exigences fonctionnelles, toutes en Must</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">9</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">règles de gestion au format SI, ALORS</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">2</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">processus BPMN, conducteur et passager</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">18</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">user stories avec critères d'acceptation</p></div>
+</section>
+
+<section style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Le besoin</h2>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Pour aller d'un quartier à l'autre, les habitants combinent des transports informels, au coût et à l'attente imprévisibles. Des groupes WhatsApp organisent déjà du covoiturage, sans structure ni garantie. L'enjeu : structurer une pratique qui existe.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 12px">
+<article style="padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="margin: 0; display: flex; align-items: center; gap: 14px"><svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="7.5" r="3" fill="#E2ECE5"></circle><path d="M3.5 19.5c0-3.3 2.5-5.5 5.5-5.5 1.5 0 2.8.5 3.8 1.4"></path><path d="M17.5 21s-3.5-3.2-3.5-6a3.5 3.5 0 0 1 7 0c0 2.8-3.5 6-3.5 6z" fill="#FFFFFF" stroke="#3F6B57"></path><path d="M17.5 15h.01" stroke="#3F6B57" stroke-width="2"></path></svg><span style="font-weight: 600; font-size: 20px">Côté passager</span></p>
+<ul style="margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<li style="padding-bottom: 12px; border-bottom: 1px solid #EEF0EC"><span style="color: #5B6160">Aujourd'hui :</span> il ne sait pas combien il va payer, et doit négocier.<br /><span style="color: #3F6B57; font-weight: 500">Réponse :</span> un prix connu d'avance, non négociable.</li>
+<li><span style="color: #5B6160">Aujourd'hui :</span> il ne sait pas combien de temps il va attendre.<br /><span style="color: #3F6B57; font-weight: 500">Réponse :</span> une heure de départ connue, un trajet fiable.</li>
+</ul>
+</article>
+<article style="padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="margin: 0; display: flex; align-items: center; gap: 14px"><svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M3.5 12.5L5.6 7.8A2 2 0 0 1 7.4 6.6h9.2a2 2 0 0 1 1.8 1.2l2.1 4.7V16.5a1 1 0 0 1-1 1h-15a1 1 0 0 1-1-1z" fill="#E2ECE5"></path><path d="M5.5 12.5h13" stroke="#3F6B57"></path><circle cx="7.5" cy="17.5" r="1.9" fill="#FFFFFF"></circle><circle cx="16.5" cy="17.5" r="1.9" fill="#FFFFFF"></circle></svg><span style="font-weight: 600; font-size: 20px">Côté conducteur</span></p>
+<ul style="margin: 18px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 12px; font-size: 15px">
+<li style="padding-bottom: 12px; border-bottom: 1px solid #EEF0EC"><span style="color: #5B6160">Aujourd'hui :</span> aucun moyen simple de trouver des passagers sur son itinéraire.<br /><span style="color: #3F6B57; font-weight: 500">Réponse :</span> publier son offre et laisser la plateforme faire le rapprochement.</li>
+<li><span style="color: #5B6160">Aujourd'hui :</span> il roule avec des places vides et paie seul son carburant.<br /><span style="color: #3F6B57; font-weight: 500">Réponse :</span> remplir son véhicule et partager ses frais.</li>
+</ul>
+</article>
+</div>
+<p style="margin: 14px 0 0; font-size: 13px; color: #5B6160">Point de départ : la discovery du Product Manager et les personas du Digital Marketer de l'équipe, qui ne sont pas publiés ici.</p>
+</section>
+
+<section style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Le périmètre du MVP</h2>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Un parcours complet de bout en bout, et des renoncements écrits noir sur blanc pour tenir le délai.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 3 1 420px; min-width: 0; padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="margin: 0; font-weight: 600">Dans le périmètre</p>
+<ul style="margin: 14px 0 0; padding: 0; list-style: none; display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 10px 24px; font-size: 15px">
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="9" fill="#3F6B57"></circle><path d="M8 12.5l2.7 2.7L16 10" stroke="#FFFFFF"></path></svg>Consultation libre, compte pour réserver ou publier</li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="9" fill="#3F6B57"></circle><path d="M8 12.5l2.7 2.7L16 10" stroke="#FFFFFF"></path></svg>Inscription du conducteur avec CNI, permis et véhicule</li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="9" fill="#3F6B57"></circle><path d="M8 12.5l2.7 2.7L16 10" stroke="#FFFFFF"></path></svg>Publication d'une offre, prix calculé selon la distance</li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="9" fill="#3F6B57"></circle><path d="M8 12.5l2.7 2.7L16 10" stroke="#FFFFFF"></path></svg>Recherche et rapprochement des offres</li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="9" fill="#3F6B57"></circle><path d="M8 12.5l2.7 2.7L16 10" stroke="#FFFFFF"></path></svg>Réservation validée par le conducteur, paiement en espèces</li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="9" fill="#3F6B57"></circle><path d="M8 12.5l2.7 2.7L16 10" stroke="#FFFFFF"></path></svg>Notation du conducteur après le trajet</li>
+</ul>
+</div>
+<div style="flex: 2 1 280px; min-width: 0; padding: 28px; border-radius: 20px; background: #F1F4F2">
+<p style="margin: 0; font-weight: 600">Hors périmètre</p>
+<ul style="margin: 14px 0 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 10px; font-size: 15px; color: #4A504E">
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="8.5" stroke="#9AA09D" stroke-dasharray="3 3"></circle></svg>Paiement mobile intégré</li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="8.5" stroke="#9AA09D" stroke-dasharray="3 3"></circle></svg>GPS et suivi en temps réel</li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="8.5" stroke="#9AA09D" stroke-dasharray="3 3"></circle></svg>Messagerie entre utilisateurs</li>
+<li style="display: flex; gap: 10px"><svg aria-hidden="true" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke-width="2" style="flex: none; margin-top: 3px"><circle cx="12" cy="12" r="8.5" stroke="#9AA09D" stroke-dasharray="3 3"></circle></svg>Historique, notifications, annulations</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
+<div style="flex: 1 1 240px; min-width: 0">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Mon rôle</h2>
+<p style="margin: 12px 0 0; color: #4A504E">L'un des deux Business Analysts de l'équipe, j'ai rédigé le cahier des charges et ses processus BPMN, puis contribué au FRD, aux user stories et au backlog. Extrait de la matrice RACI du cahier des charges.</p>
+</div>
+<div style="flex: 999 1 520px; min-width: 0; padding: 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1; overflow-x: auto">
+<table style="width: 100%; min-width: 520px; border-collapse: collapse; font-size: 15px; text-align: center">
+<caption style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Extrait de la matrice RACI : R réalise, A approuve, C consulté, I informé</caption>
+<thead>
+<tr style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">
+<th scope="col" style="text-align: left; font-weight: 400; padding: 8px 12px 8px 0; border-bottom: 1px solid #E3E5E1">Livrable</th>
+<th scope="col" style="font-weight: 400; padding: 8px; border-bottom: 1px solid #E3E5E1">PM</th>
+<th scope="col" style="font-weight: 500; padding: 8px; border-bottom: 1px solid #E3E5E1; color: #3F6B57">BA</th>
+<th scope="col" style="font-weight: 400; padding: 8px; border-bottom: 1px solid #E3E5E1">Dév.</th>
+<th scope="col" style="font-weight: 400; padding: 8px; border-bottom: 1px solid #E3E5E1">CP</th>
+</tr>
+</thead>
+<tbody>
+<tr><th scope="row" style="text-align: left; font-weight: 400; padding: 12px 12px 12px 0; border-bottom: 1px solid #EEF0EC">Cahier des charges, FRD, BPMN</th><td style="padding: 12px 8px; border-bottom: 1px solid #EEF0EC; color: #5B6160">C</td><td style="padding: 12px 8px; border-bottom: 1px solid #EEF0EC"><span style="padding: 3px 10px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; font-size: 13px">A / R</span></td><td style="padding: 12px 8px; border-bottom: 1px solid #EEF0EC; color: #5B6160">I</td><td style="padding: 12px 8px; border-bottom: 1px solid #EEF0EC; color: #5B6160">C</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 400; padding: 12px 12px 12px 0; border-bottom: 1px solid #EEF0EC">User stories et critères d'acceptation</th><td style="padding: 12px 8px; border-bottom: 1px solid #EEF0EC; color: #5B6160">C</td><td style="padding: 12px 8px; border-bottom: 1px solid #EEF0EC"><span style="padding: 3px 10px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; font-size: 13px">A / R</span></td><td style="padding: 12px 8px; border-bottom: 1px solid #EEF0EC; color: #5B6160">C</td><td style="padding: 12px 8px; border-bottom: 1px solid #EEF0EC; color: #5B6160">C</td></tr>
+<tr><th scope="row" style="text-align: left; font-weight: 400; padding: 12px 12px 12px 0">Backlog priorisé de la V1</th><td style="padding: 12px 8px; color: #5B6160">A</td><td style="padding: 12px 8px"><span style="padding: 3px 10px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px">R</span></td><td style="padding: 12px 8px; color: #5B6160">I</td><td style="padding: 12px 8px; color: #5B6160">C</td></tr>
+</tbody>
+</table>
+<p style="margin: 14px 0 0; font-size: 13px; color: #5B6160">R : réalise. A : approuve. C : consulté. I : informé. Dév. : développeur fullstack. CP : chef de projet, senior dev.</p>
+</div>
+</section>
+
+<section id="processus" style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Deux processus modélisés</h2>
+<p style="margin: 8px 0 24px; max-width: 64ch; color: #4A504E">Chaque étape porte son acteur entre crochets, comme dans le cahier des charges. Les embranchements montrent ce qui arrête le parcours.</p>
+<p style="margin: 0 0 24px; display: flex; flex-wrap: wrap; gap: 8px; font-size: 13px">
+<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444">Conducteur</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #F3EAE5; color: #6E4532">Passager</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #F1F2EF; color: #4A504E">Système</span>
+<span style="display: inline-flex; align-items: center; gap: 6px; padding: 4px 12px; color: #4A504E"><span aria-hidden="true" style="width: 10px; height: 10px; transform: rotate(45deg); border: 1.5px solid #3F6B57; background: #FFFFFF"></span>Décision</span>
+</p>
+<div style="display: flex; flex-wrap: wrap; gap: 20px; align-items: flex-start">
+
+<figure style="flex: 1 1 340px; min-width: 0; margin: 0; padding: 28px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<figcaption style="font-weight: 600; font-size: 19px">1. Publier une offre</figcaption>
+<p style="margin: 4px 0 20px; font-size: 14px; color: #5B6160">Parcours du conducteur</p>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 16px; height: 16px; border-radius: 50%; border: 2px solid #3F6B57; background: #FFFFFF; box-sizing: border-box; margin-top: 4px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px"></span></span><p style="margin: 0 0 14px; font-size: 15px; color: #4A504E">Le conducteur veut proposer un trajet</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 12px; height: 12px; transform: rotate(45deg); border: 1.5px solid #3F6B57; background: #FFFFFF; margin-top: 7px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><div style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #E6EEE9; color: #2F5444; font-size: 12px">Conducteur</span> <strong style="font-weight: 600">Déjà inscrit ?</strong><p style="margin: 6px 0 0; padding: 8px 12px; border-radius: 10px; border: 1px dashed #C9D3CC; font-size: 14px; color: #4A504E">Non : créer un compte avec identité, CNI, permis, documents et photo du véhicule, nombre de places</p></div></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #E6EEE9; color: #2F5444; font-size: 12px">Conducteur</span> Saisir l'offre : départ, arrivée, heure de départ</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F1F2EF; color: #4A504E; font-size: 12px">Système</span> Estimer le prix selon la distance</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F1F2EF; color: #4A504E; font-size: 12px">Système</span> Publier l'offre, places égales à la capacité du véhicule</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 16px; height: 16px; border-radius: 50%; border: 4px solid #17191A; background: #FFFFFF; box-sizing: border-box; margin-top: 4px"></span></span><p style="margin: 0; font-size: 15px; color: #4A504E">Offre visible et prête à être rapprochée</p></li>
+</ol>
+</figure>
+
+<figure style="flex: 1.4 1 420px; min-width: 0; margin: 0; padding: 28px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<figcaption style="font-weight: 600; font-size: 19px">2. Rechercher, réserver, être pris en charge</figcaption>
+<p style="margin: 4px 0 20px; font-size: 14px; color: #5B6160">Parcours du passager</p>
+<ol style="list-style: none; margin: 0; padding: 0; display: flex; flex-direction: column">
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 16px; height: 16px; border-radius: 50%; border: 2px solid #3F6B57; background: #FFFFFF; box-sizing: border-box; margin-top: 4px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px"></span></span><p style="margin: 0 0 14px; font-size: 15px; color: #4A504E">Le passager veut se déplacer</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F3EAE5; color: #6E4532; font-size: 12px">Passager</span> Rechercher : heure, départ, arrivée</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 12px; height: 12px; transform: rotate(45deg); border: 1.5px solid #3F6B57; background: #FFFFFF; margin-top: 7px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><div style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F1F2EF; color: #4A504E; font-size: 12px">Système</span> Rapprocher avec les offres. <strong style="font-weight: 600">Des offres correspondent ?</strong><p style="margin: 6px 0 0; padding: 8px 12px; border-radius: 10px; border: 1px dashed #C9D3CC; font-size: 14px; color: #4A504E">Non : fin, aucun résultat</p></div></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F3EAE5; color: #6E4532; font-size: 12px">Passager</span> Consulter le détail d'un trajet dans la liste</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 12px; height: 12px; transform: rotate(45deg); border: 1.5px solid #3F6B57; background: #FFFFFF; margin-top: 7px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><div style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F1F2EF; color: #4A504E; font-size: 12px">Système</span> <strong style="font-weight: 600">Places disponibles ?</strong><p style="margin: 6px 0 0; padding: 8px 12px; border-radius: 10px; border: 1px dashed #C9D3CC; font-size: 14px; color: #4A504E">Non : le trajet s'affiche complet, retour au détail</p></div></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F3EAE5; color: #6E4532; font-size: 12px">Passager</span> Envoyer une demande de réservation</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 12px; height: 12px; transform: rotate(45deg); border: 1.5px solid #3F6B57; background: #FFFFFF; margin-top: 7px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><div style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #E6EEE9; color: #2F5444; font-size: 12px">Conducteur</span> <strong style="font-weight: 600">Valider la demande ?</strong><p style="margin: 6px 0 0; padding: 8px 12px; border-radius: 10px; border: 1px dashed #C9D3CC; font-size: 14px; color: #4A504E">Non : fin, demande refusée</p></div></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F1F2EF; color: #4A504E; font-size: 12px">Système</span> Retirer une place au trajet</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #E6EEE9; color: #2F5444; font-size: 12px">Conducteur</span> Venir chercher le passager</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F3EAE5; color: #6E4532; font-size: 12px">Passager</span> Effectuer le trajet, payer en espèces</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 8px; height: 8px; border-radius: 50%; background: #17191A; margin-top: 9px"></span><span style="flex: 1; width: 2px; background: #E3E5E1; min-height: 14px; margin-top: 4px"></span></span><p style="margin: 0 0 14px; font-size: 15px"><span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F3EAE5; color: #6E4532; font-size: 12px">Passager</span> Noter le conducteur, puis <span style="display: inline-block; padding: 1px 8px; border-radius: 6px; background: #F1F2EF; color: #4A504E; font-size: 12px">Système</span> mettre à jour sa note moyenne</p></li>
+<li style="display: flex; gap: 14px"><span aria-hidden="true" style="flex: none; display: flex; flex-direction: column; align-items: center; width: 18px"><span style="width: 16px; height: 16px; border-radius: 50%; border: 4px solid #17191A; background: #FFFFFF; box-sizing: border-box; margin-top: 4px"></span></span><p style="margin: 0; font-size: 15px; color: #4A504E">Trajet clôturé</p></li>
+</ol>
+</figure>
+
+</div>
+</section>
+
+<section style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Des règles testables</h2>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Chaque exigence porte un critère au format Given, When, Then. Chaque règle de gestion s'écrit SI, ALORS, pour qu'un testeur puisse la vérifier sans interprétation.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<article style="flex: 1 1 380px; min-width: 0; padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="margin: 0; display: flex; flex-wrap: wrap; align-items: center; gap: 8px"><span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500">EX-11</span><span style="padding: 3px 10px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; font-size: 12px">Must</span></p>
+<p style="margin: 12px 0 0; font-weight: 600; font-size: 18px">La réservation</p>
+<p style="margin: 6px 0 0; font-size: 15px; color: #4A504E">Le passager envoie une demande, le conducteur la valide. À la validation, une place est décomptée et le passager est pris en charge.</p>
+<dl style="margin: 18px 0 0; display: grid; grid-template-columns: 64px 1fr; gap: 8px 12px; font-size: 15px">
+<dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57; padding-top: 3px">Given</dt><dd style="margin: 0">un trajet avec des places disponibles</dd>
+<dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57; padding-top: 3px">When</dt><dd style="margin: 0">le passager envoie une demande et le conducteur la valide</dd>
+<dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57; padding-top: 3px">Then</dt><dd style="margin: 0">une place est décomptée et la prise en charge est actée</dd>
+</dl>
+</article>
+<div style="flex: 1 1 380px; min-width: 0; display: flex; flex-direction: column; gap: 12px">
+<article style="padding: 22px 24px; border-radius: 18px; background: #F1F4F2"><p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">RG3</p><p style="margin: 6px 0 0; font-size: 15px"><strong style="font-weight: 600">SI</strong> une réservation est validée <strong style="font-weight: 600">ALORS</strong> les places disponibles baissent de 1, à partir de la capacité du véhicule.</p></article>
+<article style="padding: 22px 24px; border-radius: 18px; background: #F1F4F2"><p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">RG7</p><p style="margin: 6px 0 0; font-size: 15px"><strong style="font-weight: 600">SI</strong> une mise en relation a lieu <strong style="font-weight: 600">ALORS</strong> le paiement se fait en espèces, hors plateforme.</p></article>
+<article style="padding: 22px 24px; border-radius: 18px; background: #F1F4F2"><p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">RG8</p><p style="margin: 6px 0 0; font-size: 15px"><strong style="font-weight: 600">SI</strong> un trajet est effectué <strong style="font-weight: 600">ALORS</strong> le passager peut noter le conducteur, et sa moyenne est recalculée.</p></article>
+</div>
+</div>
+</section>
+
+<section style="padding-bottom: 88px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Du backlog aux sprints</h2>
+<p style="margin: 0; font-size: 15px; color: #5B6160">18 user stories : 15 Must, 3 Should</p>
+</div>
+<p style="margin: 8px 0 24px; max-width: 64ch; color: #4A504E">Chaque story du backlog porte une justification de sa priorité. Le premier sprint livre le parcours complet ; la notation suit au second.</p>
+<div style="display: flex; flex-wrap: wrap; gap: 12px">
+<div style="flex: 2 1 420px; min-width: 0; padding: 28px; border-radius: 20px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="margin: 0; display: flex; justify-content: space-between; gap: 12px"><span style="font-weight: 600">Sprint 1</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">14 stories, toutes Must</span></p>
+<ul style="margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px">
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Comptes conducteur et passager</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Compte pour réserver ou publier</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Profil du conducteur</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Page d'accueil</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Publier une offre</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Prix calculé</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Recherche et rapprochement</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Détail du trajet</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Places restantes</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Demande de réservation</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Mise à jour des places</li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #F1F4F2">Connexion avant réservation</li>
+</ul>
+<p style="margin: 16px 0 0; padding-top: 14px; border-top: 1px solid #EEF0EC; font-size: 14px; color: #4A504E"><span style="color: #5B6160">Justification de US-5, prix calculé :</span> pilier de la valeur, le prix est connu d'avance.</p>
+</div>
+<div style="flex: 1 1 280px; min-width: 0; padding: 28px; border-radius: 20px; background: #F1F4F2">
+<p style="margin: 0; display: flex; justify-content: space-between; gap: 12px"><span style="font-weight: 600">Sprint 2</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">4 stories</span></p>
+<ul style="margin: 16px 0 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 8px; font-size: 14px">
+<li style="padding: 6px 12px; border-radius: 10px; background: #FFFFFF">Trajet complet bloqué <span style="color: #5B6160">Must</span></li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #FFFFFF">Noter le conducteur <span style="color: #5B6160">Should</span></li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #FFFFFF">Voir la note du conducteur <span style="color: #5B6160">Should</span></li>
+<li style="padding: 6px 12px; border-radius: 10px; background: #FFFFFF">Le conducteur voit sa note <span style="color: #5B6160">Should</span></li>
+</ul>
+<p style="margin: 16px 0 0; padding-top: 14px; border-top: 1px solid #DCE3DE; font-size: 14px; color: #4A504E"><span style="color: #5B6160">Justification de US-16 :</span> renforce la confiance, mais ne bloque pas la démonstration de la mise en relation.</p>
+</div>
+</div>
+</section>
+
+<section id="livrables" style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Les livrables</h2>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Les documents d'analyse métier produits par le binôme de Business Analysts. La discovery et les personas, produits par d'autres membres de l'équipe, n'en font pas partie.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); gap: 12px">
+
+<a href="/livrables/bracovoit-cahier-des-charges.pdf" download class="card" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1; text-decoration: none; color: #17191A">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7.5A1.5 1.5 0 0 0 6 4.5v15A1.5 1.5 0 0 0 7.5 21h9a1.5 1.5 0 0 0 1.5-1.5V7z" fill="#E2ECE5"></path><path d="M14 3v4h4" fill="#FFFFFF"></path><path d="M9 11h6M9 14h6"></path><path d="M9 17h3.5" stroke="#3F6B57"></path></svg>
+<span style="display: block"><span style="display: block; font-weight: 600; font-size: 18px">Cahier des charges</span><span style="display: block; margin-top: 2px; font-size: 14px; color: #5B6160">Périmètre, RACI, exigences, BPMN, règles. 14 pages</span></span>
+<span style="margin-top: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">PDF</span>
+</a>
+
+<a href="/livrables/bracovoit-frd.pdf" download class="card" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1; text-decoration: none; color: #17191A">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M14 3H7.5A1.5 1.5 0 0 0 6 4.5v15A1.5 1.5 0 0 0 7.5 21h9a1.5 1.5 0 0 0 1.5-1.5V7z" fill="#E2ECE5"></path><path d="M14 3v4h4" fill="#FFFFFF"></path><rect x="8.8" y="10.5" width="3.2" height="3.2" rx=".6" fill="#FFFFFF"></rect><path d="M12 12.1h2.5V17H10.5" stroke="#3F6B57"></path></svg>
+<span style="display: block"><span style="display: block; font-weight: 600; font-size: 18px">FRD</span><span style="display: block; margin-top: 2px; font-size: 14px; color: #5B6160">7 fonctionnalités, scénarios et cas d'échec. 4 pages</span></span>
+<span style="margin-top: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">PDF</span>
+</a>
+
+<a href="/livrables/bracovoit-user-stories.xlsx" download class="card" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1; text-decoration: none; color: #17191A">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M8.5 4h9.5a1.5 1.5 0 0 1 1.5 1.5V15"></path><rect x="4.5" y="7" width="12" height="13" rx="1.5" fill="#E2ECE5"></rect><path d="M7.5 11h6"></path><path d="M7.5 14.5h4" stroke="#3F6B57"></path></svg>
+<span style="display: block"><span style="display: block; font-weight: 600; font-size: 18px">User stories</span><span style="display: block; margin-top: 2px; font-size: 14px; color: #5B6160">18 stories, source et critère d'acceptation</span></span>
+<span style="margin-top: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">Excel</span>
+</a>
+
+<a href="/livrables/bracovoit-backlog-moscow.xlsx" download class="card" style="display: flex; flex-direction: column; gap: 16px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1; text-decoration: none; color: #17191A">
+<svg aria-hidden="true" width="36" height="36" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3.5" y="4" width="17" height="16" rx="1.8" fill="#E2ECE5"></rect><path d="M3.5 9.5h17M3.5 14.5h17M9.5 4v16"></path><rect x="11.5" y="11.2" width="7" height="1.6" rx=".8" fill="#3F6B57" stroke="none"></rect></svg>
+<span style="display: block"><span style="display: block; font-weight: 600; font-size: 18px">Backlog MoSCoW</span><span style="display: block; margin-top: 2px; font-size: 14px; color: #5B6160">Priorités justifiées, découpage en 2 sprints</span></span>
+<span style="margin-top: auto; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">Excel</span>
+</a>
+
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
+<h2 style="flex: 1 1 240px; margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Limites</h2>
+<ul style="flex: 999 1 520px; min-width: 0; margin: 0; padding: 0; list-style: none; display: flex; flex-direction: column; gap: 14px; color: #4A504E">
+<li style="padding-bottom: 14px; border-bottom: 1px solid #E3E5E1"><strong style="font-weight: 600; color: #17191A">Une simulation d'entreprise.</strong> Le projet a été mené dans le cadre de la formation Akieni Academy, sans client réel.</li>
+<li style="padding-bottom: 14px; border-bottom: 1px solid #E3E5E1"><strong style="font-weight: 600; color: #17191A">Une règle de prix à définir.</strong> Le prix dépend de la distance, mais le barème reste à fixer avec l'équipe produit.</li>
+<li><strong style="font-weight: 600; color: #17191A">Un paiement hors plateforme.</strong> Le paiement en espèces simplifie le MVP, mais la plateforme ne peut ni garantir ni tracer la transaction.</li>
+</ul>
+</section>
+
+<ProjectNav
+  prev={{ href: "/projet-tableau-de-bord", eyebrow: "Projet précédent", title: "Tableau de bord ventes et SAV" }}
+  next={{ href: "/projets", eyebrow: "Retour", title: "Tous les projets" }}
+/>
+
+</BaseLayout>

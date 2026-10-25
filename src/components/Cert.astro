@@ -1,0 +1,40 @@
+---
+import { existsSync } from 'node:fs';
+
+interface Props {
+  title: string;
+  issuer: string;
+  logo: string;
+  platform?: string;
+  platformLogo?: string;
+  note?: string;
+  muted?: boolean;
+}
+const { title, issuer, logo, platform, platformLogo, note, muted = false } = Astro.props;
+
+// Le logo officiel n'est affiché que si le fichier a été déposé dans public/logos.
+// Sinon, on retombe proprement sur une pastille texte, sans image cassée.
+const logoExists = (file?: string) => !!file && existsSync(new URL(`../../public/logos/${file}`, import.meta.url));
+const hasIssuerLogo = logoExists(logo);
+const hasPlatformLogo = logoExists(platformLogo);
+
+const bg = muted ? '#F1F4F2' : '#FFFFFF';
+const borderColor = muted ? '#F1F4F2' : '#E3E5E1';
+const noteColor = muted ? '#3F6B57' : '#5B6160';
+---
+<div class="card" style={`display: flex; flex-direction: column; gap: 16px; padding: 22px; border-radius: 18px; background: ${bg}; border: 1px solid ${borderColor}`}>
+<div style="display: flex; align-items: center; flex-wrap: wrap; gap: 12px; min-height: 30px">
+{hasIssuerLogo
+  ? <img src={`/logos/${logo}`} alt={issuer} height="28" style="display: block; height: 28px; width: auto; max-width: 120px; object-fit: contain" />
+  : <span style="display: inline-flex; align-items: center; height: 26px; padding: 0 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">{issuer}</span>
+}
+{platform && (hasPlatformLogo
+  ? <img src={`/logos/${platformLogo}`} alt={platform} height="24" style="display: block; height: 24px; width: auto; max-width: 110px; object-fit: contain" />
+  : <span style="display: inline-flex; align-items: center; height: 24px; padding: 0 10px; border-radius: 999px; background: #F1F2EF; color: #4A504E; font-size: 12px">{platform}</span>
+)}
+</div>
+<div>
+<p style="margin: 0; font-weight: 600">{title}</p>
+{note && <p style={`margin: 6px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: ${noteColor}`}>{note}</p>}
+</div>
+</div>

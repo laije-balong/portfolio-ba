@@ -1,0 +1,202 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectNav from '../components/ProjectNav.astro';
+---
+<BaseLayout
+  title="Tableau de bord ventes et SAV, Laije Belthassar BALONG"
+  description="TP certifiant IBM : deux pages Looker Studio pour suivre les ventes d'un constructeur automobile fictif et comprendre ses retours de service après-vente."
+  active="projets"
+>
+
+<p style="margin: 40px 0 0; font-size: 14px; color: #5B6160"><a href="/projets" class="lnk">Projets</a><span aria-hidden="true" style="margin: 0 10px">/</span>Tableau de bord ventes et SAV</p>
+
+<section style="padding: 32px 0 56px">
+<p style="margin: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Analyse de données</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Tableau de bord</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #F1F2EF; color: #4A504E; font-size: 13px">Secteur automobile</span>
+</p>
+<h1 style="margin: 24px 0 0; max-width: 20ch; font-weight: 600; font-size: 56px; line-height: 1.06; letter-spacing: -0.03em">Tableau de bord ventes et SAV</h1>
+<p style="margin: 24px 0 0; max-width: 62ch; font-size: 20px; line-height: 1.5; color: #4A504E">Deux pages sous Looker Studio pour suivre les ventes d'un constructeur automobile fictif et comprendre ce que son service après-vente reçoit, modèle par modèle.</p>
+
+<dl style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 40px 0 0; padding: 24px 0; border-top: 1px solid #E3E5E1; border-bottom: 1px solid #E3E5E1">
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Date</dt><dd style="margin: 4px 0 0; font-weight: 500">[DATE]</dd></div>
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Contexte</dt><dd style="margin: 4px 0 0; font-weight: 500">TP certifiant IBM</dd></div>
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Rôle</dt><dd style="margin: 4px 0 0; font-weight: 500">Réalisé seul</dd></div>
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Outil</dt><dd style="margin: 4px 0 0; font-weight: 500">Looker Studio</dd></div>
+</dl>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px">
+<a href="https://datastudio.google.com/reporting/6512df5d-7f2c-45db-ab47-6b740c6bb6ee" class="btn btn-main" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px">Ouvrir le tableau de bord</a>
+<a href="#" class="btn btn-line" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; border: 1px solid #D5D9D4; color: #17191A; text-decoration: none; font-weight: 500; font-size: 16px">Télécharger en PDF</a>
+</div>
+</section>
+
+<section aria-label="Chiffres clés" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; padding-bottom: 88px">
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">58 118</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">véhicules vendus</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">78,4 M$</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">de profit</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">19,4</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">quantité moyenne vendue</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">5</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">modèles suivis</p></div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
+<h2 style="flex: 1 1 240px; margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">La question de départ</h2>
+<div style="flex: 999 1 520px; min-width: 0">
+<p style="margin: 0; font-size: 19px; line-height: 1.55">Un constructeur veut savoir, sur un seul écran, quels modèles se vendent et rapportent le plus, puis quels modèles et quels systèmes du véhicule pèsent le plus sur son service après-vente.</p>
+<p style="margin: 16px 0 0; color: #4A504E">Le travail a été réalisé dans le cadre de la formation IBM System Analyst, sur un jeu de données fictif fourni par le cours.</p>
+</div>
+</section>
+
+<section style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Les deux pages</h2>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">La première page répond à la question des ventes, la seconde à celle du service après-vente.</p>
+<div style="display: flex; flex-direction: column; gap: 20px">
+
+<figure style="display: flex; flex-wrap: wrap; gap: 32px; margin: 0; padding: 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<div style="flex: 3 1 480px; min-width: 0; padding: 16px; border-radius: 16px; background: #F1F4F2">
+<img src="/images/tableau-de-bord-page-1.webp" alt="Page Ventes du tableau de bord : trois indicateurs clés, quantités vendues par modèle et profit par identifiant" style="display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid #D5DCD7; background: #FFFFFF" />
+</div>
+<figcaption style="flex: 2 1 280px; min-width: 0; padding: 8px 8px 8px 0">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">Page 1</p>
+<p style="margin: 6px 0 0; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Ventes</p>
+<ul style="margin: 14px 0 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; color: #4A504E; font-size: 16px">
+<li>Trois indicateurs en tête de page : quantité vendue, profit, quantité moyenne par vente.</li>
+<li>Quantités vendues par modèle, du plus vendu au moins vendu.</li>
+<li>Profit par [DIMENSION À PRÉCISER], sur les 10 premières valeurs.</li>
+</ul>
+</figcaption>
+</figure>
+
+<figure style="display: flex; flex-wrap: wrap; flex-direction: row-reverse; gap: 32px; margin: 0; padding: 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<div style="flex: 3 1 480px; min-width: 0; padding: 16px; border-radius: 16px; background: #F1F4F2">
+<img src="/images/tableau-de-bord-page-2.webp" alt="Page Service du tableau de bord : unités de service par modèle, sentiment client, quantité vendue et profit par mois, tableau croisé modèle et système concerné" style="display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid #D5DCD7; background: #FFFFFF" />
+</div>
+<figcaption style="flex: 2 1 280px; min-width: 0; padding: 8px 0 8px 8px">
+<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">Page 2</p>
+<p style="margin: 6px 0 0; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Service après-vente</p>
+<ul style="margin: 14px 0 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; color: #4A504E; font-size: 16px">
+<li>Unités traitées par le service, par modèle.</li>
+<li>Sentiment des clients : positif, neutre ou négatif.</li>
+<li>Quantité vendue et profit, mois par mois.</li>
+<li>Tableau croisé des modèles et des systèmes concernés, avec une échelle de couleur.</li>
+</ul>
+</figcaption>
+</figure>
+
+</div>
+</section>
+
+<section style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Où se concentre le service après-vente</h2>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Unités traitées par le service, par modèle et par système concerné, en milliers. Plus la case est foncée, plus le volume est élevé.</p>
+<div style="padding: 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1; overflow-x: auto">
+<table style="width: 100%; min-width: 620px; border-collapse: separate; border-spacing: 4px; font-size: 16px; text-align: right">
+<caption style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Unités de service après-vente en milliers, par modèle et par système concerné</caption>
+<thead>
+<tr style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">
+<th scope="col" style="text-align: left; font-weight: 400; padding: 8px 12px">Modèle</th>
+<th scope="col" style="font-weight: 400; padding: 8px 12px">Airbag</th>
+<th scope="col" style="font-weight: 400; padding: 8px 12px">Suspension</th>
+<th scope="col" style="font-weight: 400; padding: 8px 12px">Sièges [À CONFIRMER]</th>
+<th scope="col" style="font-weight: 400; padding: 8px 12px">Moteur</th>
+<th scope="col" style="font-weight: 400; padding: 8px 12px">Pneus</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Beaufort</th>
+<td style="padding: 12px; border-radius: 8px; background: #3F6B57; color: #FFFFFF; font-weight: 600">52,5</td>
+<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">31,4</td>
+<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">3,4</td>
+<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">20,8</td>
+<td style="padding: 12px; border-radius: 8px; background: #FBFBF9; color: #5B6160">aucune</td>
+</tr>
+<tr>
+<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Champlain</th>
+<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">9,9</td>
+<td style="padding: 12px; border-radius: 8px; background: #3F6B57; color: #FFFFFF; font-weight: 600">60,9</td>
+<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">44,4</td>
+<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">7,7</td>
+<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">20,9</td>
+</tr>
+<tr>
+<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Labrador</th>
+<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">32,2</td>
+<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">15,5</td>
+<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">13,2</td>
+<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">30,1</td>
+<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">30,3</td>
+</tr>
+<tr>
+<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Hudson</th>
+<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">33,1</td>
+<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">4,5</td>
+<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">20,9</td>
+<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">26,8</td>
+<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">11,2</td>
+</tr>
+<tr>
+<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Salish</th>
+<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">21,2</td>
+<td style="padding: 12px; border-radius: 8px; background: #FBFBF9; color: #5B6160">aucune</td>
+<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">14,2</td>
+<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">3,3</td>
+<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">17,3</td>
+</tr>
+</tbody>
+</table>
+</div>
+</section>
+
+<section style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Ce que le tableau de bord fait ressortir</h2>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Trois lectures, à confirmer avec les équipes ventes et après-vente avant toute décision.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px">
+<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<h3 style="margin: 0; font-weight: 600; font-size: 19px">Champlain, peu vendu mais très présent au service</h3>
+<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">C'est le modèle le moins vendu, et pourtant le deuxième en volume de service. À vérifier : les unités de service et les quantités vendues mesurent-elles la même chose ?</p>
+</article>
+<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<h3 style="margin: 0; font-weight: 600; font-size: 19px">Deux couples modèle et système dominent</h3>
+<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">La suspension du Champlain (60,9 milliers d'unités) et l'airbag du Beaufort (52,5 milliers) sont les deux plus fortes valeurs du tableau croisé.</p>
+</article>
+<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<h3 style="margin: 0; font-weight: 600; font-size: 19px">Hudson en tête des ventes</h3>
+<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Hudson est le modèle le plus vendu, devant Labrador et Salish. Le sentiment des clients est majoritairement positif.</p>
+</article>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
+<h2 style="flex: 1 1 240px; margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Méthode et limites</h2>
+<div style="flex: 999 1 520px; min-width: 0">
+<ol style="margin: 0; padding: 0 0 0 22px; display: flex; flex-direction: column; gap: 10px">
+<li>Une page par question : les ventes d'abord, le service après-vente ensuite.</li>
+<li>Les indicateurs clés en haut, puis le détail par modèle.</li>
+<li>Un graphique par usage : barres pour comparer les modèles, carte proportionnelle pour le sentiment, graphique combiné pour les mois, tableau croisé coloré pour repérer les concentrations.</li>
+</ol>
+<div style="margin-top: 24px; padding: 20px 24px; border-radius: 16px; border: 1px solid #E3E5E1; background: #FFFFFF">
+<p style="margin: 0; font-weight: 600">Limites et améliorations prévues</p>
+<ul style="margin: 8px 0 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; color: #4A504E">
+<li>Les données sont fictives et fournies par le cours.</li>
+<li>Les mois sont classés par profit et non dans l'ordre du calendrier, ce qui rend la tendance difficile à lire.</li>
+<li>Le graphique de profit n'indique pas ce que représentent ses identifiants.</li>
+<li>Les libellés sont en anglais .</li>
+</ul>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding: 32px; margin-bottom: 56px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<div>
+<p style="margin: 0; font-weight: 600; font-size: 20px">Le tableau de bord en ligne</p>
+<p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">Deux pages interactives sous Looker Studio.</p>
+</div>
+<a href="https://datastudio.google.com/reporting/6512df5d-7f2c-45db-ab47-6b740c6bb6ee" class="btn btn-main" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px">Ouvrir le tableau de bord</a>
+</section>
+
+<ProjectNav
+  prev={{ href: "/projet-ndako-tech", eyebrow: "Projet précédent", title: "Ndako Tech" }}
+  next={{ href: "/projet-bracovoit", eyebrow: "Projet suivant", title: "BraCovoit" }}
+/>
+
+</BaseLayout>

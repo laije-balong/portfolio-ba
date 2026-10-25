@@ -1,0 +1,311 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import ProjectNav from '../components/ProjectNav.astro';
+---
+<BaseLayout
+  title="Ouverture d'un compte particulier en agence, Laije Belthassar BALONG"
+  description="Étude personnelle : le parcours supposé d'ouverture d'un compte en agence, modélisé en BPMN sur 3 couloirs, avec 4 points à vérifier et 5 pistes priorisées en MoSCoW."
+  active="projets"
+>
+
+<p style="margin: 40px 0 0; font-size: 14px; color: #5B6160"><a href="/projets" class="lnk">Projets</a><span aria-hidden="true" style="margin: 0 10px">/</span>Ouverture d'un compte particulier</p>
+
+<section style="padding: 32px 0 56px">
+<p style="margin: 0; display: flex; flex-wrap: wrap; gap: 8px">
+<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Modélisation BPMN</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Rédaction d'exigences</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #F1F2EF; color: #4A504E; font-size: 13px">Secteur bancaire</span>
+</p>
+<h1 style="margin: 24px 0 0; max-width: 20ch; font-weight: 600; font-size: 56px; line-height: 1.06; letter-spacing: -0.03em">Ouverture d'un compte particulier en agence</h1>
+<p style="margin: 24px 0 0; max-width: 62ch; font-size: 20px; line-height: 1.5; color: #4A504E">Le parcours supposé du client, du premier renseignement au retrait de la carte, modélisé en BPMN pour repérer où il attend et proposer des pistes à discuter avec les équipes métier.</p>
+
+<dl style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 40px 0 0; padding: 24px 0; border-top: 1px solid #E3E5E1; border-bottom: 1px solid #E3E5E1">
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Date</dt><dd style="margin: 4px 0 0; font-weight: 500">Octobre 2026</dd></div>
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Contexte</dt><dd style="margin: 4px 0 0; font-weight: 500">Étude personnelle</dd></div>
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Rôle</dt><dd style="margin: 4px 0 0; font-weight: 500">Réalisée seul</dd></div>
+<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Livrable</dt><dd style="margin: 4px 0 0; font-weight: 500">Étude de 2 pages A4</dd></div>
+</dl>
+<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px">
+<a href="#" class="btn btn-main" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px">Télécharger l'étude en PDF</a>
+<a href="#schema" class="btn btn-line" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; border: 1px solid #D5D9D4; color: #17191A; text-decoration: none; font-weight: 500; font-size: 16px">Voir le schéma</a>
+</div>
+</section>
+
+<section aria-label="Chiffres clés" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; padding-bottom: 88px">
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">9</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">étapes, de la question au retrait de la carte</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">3</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">couloirs : client, agence, back-office</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">4</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">points à vérifier avec les équipes</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">5</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">pistes en user stories, priorisées en MoSCoW</p></div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
+<h2 style="flex: 1 1 240px; margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">La question de départ</h2>
+<div style="flex: 999 1 520px; min-width: 0">
+<p style="margin: 0; font-size: 19px; line-height: 1.55">Pour ouvrir un compte, un client doit réunir des pièces, passer en agence, attendre des contrôles de conformité, puis revenir. Où perd-il du temps, et à quels moments revient-il sans que ce soit nécessaire ?</p>
+<p style="margin: 16px 0 0; color: #4A504E">Je n'ai jamais ouvert de compte dans la banque étudiée et je n'ai pas accès à son parcours réel. L'étude décrit donc un parcours supposé, à confirmer avec un conseiller.</p>
+</div>
+</section>
+
+<section id="schema" style="padding-bottom: 88px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 24px">
+<div>
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Le parcours supposé</h2>
+<p style="margin: 8px 0 0; max-width: 62ch; color: #4A504E">Les pièces sont contrôlées en agence dès le dépôt du dossier. Le back-office ne revient vers le client qu'en cas d'exception. Les repères F1 à F4 signalent les points à vérifier.</p>
+</div>
+</div>
+<figure style="margin: 0; padding: 32px; border-radius: 24px; background: #F1F4F2; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
+<div style="flex: 999 1 560px; min-width: 0; overflow-x: auto">
+<svg viewBox="0 0 700 860" role="img" aria-label="Schéma BPMN en trois couloirs. Client : 1 se renseigner sur les pièces, 2 réunir les pièces et se rendre en agence. Agence : 3 vérifier les pièces, décision pièces conformes, sinon le client revient avec les pièces manquantes ; 4 saisir la demande et faire signer. Back-office : 5 filtrage des listes et classement du risque, décision contrôle validé, sinon exception avec demande de complément ; 6 ouvrir le compte et attribuer le RIB. Agence : 7 prévenir le client et remettre le RIB. Client : 8 effectuer le dépôt initial, 9 retirer la carte et le chéquier." style="display: block; width: 100%; min-width: 560px; max-width: 760px; height: auto; margin: 0 auto; font-family: 'Instrument Sans', sans-serif">
+<defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5B6160"></path></marker></defs>
+<rect x="0.5" y="0.5" width="699" height="859" rx="14" fill="#FFFFFF" stroke="#D5DCD7"></rect>
+<rect x="233" y="40" width="233" height="819" fill="#F7F9F7"></rect>
+<line x1="233" y1="0" x2="233" y2="860" stroke="#D5DCD7"></line>
+<line x1="466" y1="0" x2="466" y2="860" stroke="#D5DCD7"></line>
+<path d="M14 0.5 H686 A13.5 13.5 0 0 1 699.5 14 V40 H0.5 V14 A13.5 13.5 0 0 1 14 0.5 Z" fill="#E6EEE9"></path>
+<line x1="0" y1="40" x2="700" y2="40" stroke="#D5DCD7"></line>
+<text x="16" y="25" font-family="IBM Plex Mono, monospace" font-size="12" fill="#2F5444">Client</text>
+<text x="249" y="25" font-family="IBM Plex Mono, monospace" font-size="12" fill="#2F5444">Agence, conseiller</text>
+<text x="482" y="25" font-family="IBM Plex Mono, monospace" font-size="12" fill="#2F5444">Back-office, conformité</text>
+
+<circle cx="116" cy="68" r="15" fill="#FFFFFF" stroke="#3F6B57" stroke-width="2"></circle>
+<path d="M116 84 V118" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<rect x="24" y="120" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#B9C6BE"></rect>
+<text x="116" y="144" text-anchor="middle" font-size="12" fill="#17191A">1. Se renseigner sur</text>
+<text x="116" y="160" text-anchor="middle" font-size="12" fill="#17191A">les pièces à fournir</text>
+<rect x="188" y="110" width="28" height="20" rx="10" fill="#8A5A44"></rect>
+<text x="202" y="124" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">F1</text>
+<path d="M116 176 V222" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<rect x="24" y="224" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#B9C6BE"></rect>
+<text x="116" y="248" text-anchor="middle" font-size="12" fill="#17191A">2. Réunir les pièces,</text>
+<text x="116" y="264" text-anchor="middle" font-size="12" fill="#17191A">se rendre en agence</text>
+<path d="M208 252 H255" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<rect x="257" y="224" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#B9C6BE"></rect>
+<text x="349" y="248" text-anchor="middle" font-size="12" fill="#17191A">3. Vérifier la présence et</text>
+<text x="349" y="264" text-anchor="middle" font-size="12" fill="#17191A">la conformité des pièces</text>
+<path d="M349 280 V318" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<polygon points="349,320 437,356 349,392 261,356" fill="#E6EEE9" stroke="#3F6B57" stroke-width="1.5"></polygon>
+<text x="349" y="360" text-anchor="middle" font-size="12" font-weight="500" fill="#17191A">Pièces conformes ?</text>
+<path d="M261 356 H210" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+<text x="236" y="346" text-anchor="middle" font-size="11" fill="#4A504E">non</text>
+
+<rect x="24" y="328" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#B9C6BE"></rect>
+<text x="116" y="352" text-anchor="middle" font-size="12" fill="#17191A">Revenir avec les</text>
+<text x="116" y="368" text-anchor="middle" font-size="12" fill="#17191A">pièces manquantes</text>
+<rect x="24" y="318" width="28" height="20" rx="10" fill="#8A5A44"></rect>
+<text x="38" y="332" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">F2</text>
+<path d="M116 328 V282" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<path d="M349 392 V430" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+<text x="363" y="416" font-size="11" fill="#4A504E">oui</text>
+<rect x="257" y="432" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#B9C6BE"></rect>
+<text x="349" y="456" text-anchor="middle" font-size="12" fill="#17191A">4. Saisir la demande</text>
+<text x="349" y="472" text-anchor="middle" font-size="12" fill="#17191A">et faire signer</text>
+<path d="M441 460 H488" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<rect x="490" y="432" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#B9C6BE"></rect>
+<text x="582" y="456" text-anchor="middle" font-size="12" fill="#17191A">5. Filtrage des listes et</text>
+<text x="582" y="472" text-anchor="middle" font-size="12" fill="#17191A">classement du risque</text>
+<rect x="654" y="422" width="28" height="20" rx="10" fill="#8A5A44"></rect>
+<text x="668" y="436" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">F3</text>
+<path d="M582 488 V526" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<polygon points="582,528 670,564 582,600 494,564" fill="#E6EEE9" stroke="#3F6B57" stroke-width="1.5"></polygon>
+<text x="582" y="568" text-anchor="middle" font-size="12" font-weight="500" fill="#17191A">Contrôle validé ?</text>
+<path d="M494 564 H443" stroke="#8A918D" stroke-width="1.5" stroke-dasharray="5 4" fill="none" marker-end="url(#ar)"></path>
+<text x="468" y="554" text-anchor="middle" font-size="11" fill="#4A504E">non</text>
+
+<rect x="257" y="536" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#8A918D" stroke-dasharray="5 4"></rect>
+<text x="349" y="560" text-anchor="middle" font-size="12" fill="#4A504E">Exception : demander un</text>
+<text x="349" y="576" text-anchor="middle" font-size="12" fill="#4A504E">complément au client</text>
+<path d="M257 564 H210" stroke="#8A918D" stroke-width="1.5" stroke-dasharray="5 4" fill="none" marker-end="url(#ar)"></path>
+
+<rect x="24" y="536" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#8A918D" stroke-dasharray="5 4"></rect>
+<text x="116" y="560" text-anchor="middle" font-size="12" fill="#4A504E">Exception : fournir le</text>
+<text x="116" y="576" text-anchor="middle" font-size="12" fill="#4A504E">complément demandé</text>
+<path d="M116 536 V386" stroke="#8A918D" stroke-width="1.5" stroke-dasharray="5 4" fill="none" marker-end="url(#ar)"></path>
+
+<path d="M582 600 V638" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+<text x="596" y="624" font-size="11" fill="#4A504E">oui</text>
+<rect x="490" y="640" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#B9C6BE"></rect>
+<text x="582" y="664" text-anchor="middle" font-size="12" fill="#17191A">6. Ouvrir le compte,</text>
+<text x="582" y="680" text-anchor="middle" font-size="12" fill="#17191A">attribuer le RIB</text>
+<path d="M490 668 H443" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<rect x="257" y="640" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#B9C6BE"></rect>
+<text x="349" y="664" text-anchor="middle" font-size="12" fill="#17191A">7. Prévenir le client,</text>
+<text x="349" y="680" text-anchor="middle" font-size="12" fill="#17191A">remettre le RIB</text>
+<path d="M257 668 H210" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<rect x="24" y="640" width="184" height="56" rx="8" fill="#FFFFFF" stroke="#B9C6BE"></rect>
+<text x="116" y="664" text-anchor="middle" font-size="12" fill="#17191A">8. Effectuer le</text>
+<text x="116" y="680" text-anchor="middle" font-size="12" fill="#17191A">dépôt initial</text>
+<rect x="188" y="630" width="28" height="20" rx="10" fill="#8A5A44"></rect>
+<text x="202" y="644" text-anchor="middle" font-size="11" font-weight="600" fill="#FFFFFF">F4</text>
+<path d="M116 696 V742" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+
+<rect x="24" y="744" width="184" height="56" rx="8" fill="#3F6B57"></rect>
+<text x="116" y="768" text-anchor="middle" font-size="12" fill="#FFFFFF">9. Retirer la carte</text>
+<text x="116" y="784" text-anchor="middle" font-size="12" fill="#FFFFFF">et le chéquier</text>
+<path d="M116 800 V822" stroke="#5B6160" stroke-width="1.5" fill="none" marker-end="url(#ar)"></path>
+<circle cx="116" cy="838" r="13" fill="#FFFFFF" stroke="#17191A" stroke-width="4"></circle>
+</svg>
+</div>
+<figcaption style="flex: 1 1 220px; min-width: 0; font-size: 15px">
+<p style="margin: 0; font-weight: 600">Légende</p>
+<ul style="list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; color: #4A504E">
+<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #3F6B57; box-sizing: border-box"></span>Début du parcours</li>
+<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; width: 18px; height: 18px; border-radius: 50%; border: 4px solid #17191A; box-sizing: border-box"></span>Fin du parcours</li>
+<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; width: 14px; height: 14px; margin: 0 2px; transform: rotate(45deg); background: #E6EEE9; border: 1.5px solid #3F6B57"></span>Décision</li>
+<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; width: 18px; height: 0; border-top: 2px dashed #8A918D"></span>Cas d'exception</li>
+<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 20px; border-radius: 10px; background: #8A5A44; color: #FFFFFF; font-size: 11px; font-weight: 600">F1</span>Point à vérifier</li>
+</ul>
+</figcaption>
+</figure>
+</section>
+
+<section style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Quatre points à vérifier avec les équipes</h2>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Chaque point repère une attente possible entre la demande et la remise de la carte. Je les ai déduits des étapes de vigilance client, sans accès au parcours réel de la banque. Ils servent de base de discussion.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 22px; border-radius: 11px; background: #8A5A44; color: #FFFFFF; font-size: 12px; font-weight: 600">F1</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Étape 1</span></p>
+<h3 style="margin: 16px 0 0; font-weight: 600; font-size: 19px">Information avant la visite</h3>
+<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Le client découvre la liste des pièces au téléphone ou au guichet. Une pièce oubliée coûte un déplacement.</p>
+</article>
+<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 22px; border-radius: 11px; background: #8A5A44; color: #FFFFFF; font-size: 12px; font-weight: 600">F2</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Étapes 2 et 3</span></p>
+<h3 style="margin: 16px 0 0; font-weight: 600; font-size: 19px">Retour pour une pièce</h3>
+<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Une pièce absente ou non conforme renvoie le client chez lui. Le contrôle en agence rend les retours du back-office rares.</p>
+</article>
+<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 22px; border-radius: 11px; background: #8A5A44; color: #FFFFFF; font-size: 12px; font-weight: 600">F3</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Étape 5</span></p>
+<h3 style="margin: 16px 0 0; font-weight: 600; font-size: 19px">Suivi du dossier</h3>
+<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Pendant les contrôles, le client ne sait pas où en est son dossier ni quand revenir.</p>
+</article>
+<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 22px; border-radius: 11px; background: #8A5A44; color: #FFFFFF; font-size: 12px; font-weight: 600">F4</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Étapes 7 à 9</span></p>
+<h3 style="margin: 16px 0 0; font-weight: 600; font-size: 19px">Dernier passage</h3>
+<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Le dépôt initial et le retrait de la carte demandent un nouveau passage en agence.</p>
+</article>
+</div>
+</section>
+
+<section style="padding-bottom: 88px">
+<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Cinq pistes à discuter</h2>
+<p role="img" aria-label="Répartition MoSCoW : 2 Must, 1 Should, 2 Could" style="margin: 0; display: flex; gap: 8px; font-size: 13px">
+<span style="padding: 4px 12px; border-radius: 999px; background: #3F6B57; color: #FFFFFF">2 Must</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #C9D7CE; color: #17191A">1 Should</span>
+<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444">2 Could</span>
+</p>
+</div>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Chaque piste est rédigée en user story, avec un critère d'acceptation au format Étant donné, quand, alors.</p>
+<div style="display: flex; flex-direction: column; gap: 12px">
+
+<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US1</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; font-size: 12px">Must</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F1</span>
+</p>
+<div style="flex: 1 1 400px; min-width: 0">
+<p style="margin: 0">En tant que futur client, je veux consulter en ligne les pièces exigées selon mon profil (salarié, étudiant, indépendant), afin de venir avec un dossier complet.</p>
+<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné le profil étudiant, quand je le sélectionne, alors la page affiche les pièces exigées pour ce seul profil.</p>
+</div>
+</article>
+
+<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US2</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; font-size: 12px">Must</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F2</span>
+</p>
+<div style="flex: 1 1 400px; min-width: 0">
+<p style="margin: 0">En tant que conseiller, je veux une liste de contrôle des pièces dans l'outil de saisie, afin de vérifier le dossier complet dès le premier passage du client.</p>
+<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné un dossier sans justificatif de domicile, quand je valide la saisie, alors l'outil bloque l'envoi et nomme la pièce manquante.</p>
+</div>
+</article>
+
+<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US3</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #C9D7CE; color: #17191A; font-size: 12px">Should</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F3</span>
+</p>
+<div style="flex: 1 1 400px; min-width: 0">
+<p style="margin: 0">En tant que client, je veux recevoir un SMS à chaque changement de statut de mon dossier, afin de savoir quand revenir et avec quoi.</p>
+<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné un dossier ouvert, quand mon compte est prêt, alors je reçois un SMS qui indique quoi apporter pour le dépôt initial.</p>
+</div>
+</article>
+
+<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US4</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 12px">Could</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F2</span>
+</p>
+<div style="flex: 1 1 400px; min-width: 0">
+<p style="margin: 0">En tant que futur client, je veux pré-remplir le formulaire et déposer mes pièces avant le rendez-vous, afin de réduire le temps passé en agence.</p>
+<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné un pré-dossier déposé, quand le conseiller ouvre ma demande, alors il retrouve mes informations sans ressaisie.</p>
+</div>
+</article>
+
+<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
+<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US5</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 12px">Could</span>
+<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F4</span>
+</p>
+<div style="flex: 1 1 400px; min-width: 0">
+<p style="margin: 0">En tant que client, je veux verser le dépôt initial par mobile money, afin d'éviter un déplacement de plus.</p>
+<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné un compte ouvert, quand je paie le dépôt initial par mobile money, alors le compte est crédité et je reçois un reçu.</p>
+</div>
+</article>
+
+</div>
+</section>
+
+<section style="padding-bottom: 88px">
+<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Ce que j'aimerais observer en agence</h2>
+<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Trois mesures permettraient de confirmer ou d'écarter les quatre points.</p>
+<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
+<div style="padding: 24px; border-radius: 18px; background: #F1F4F2"><p style="margin: 0; font-weight: 600; font-size: 19px">Passages en agence par compte ouvert</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #F1F4F2"><p style="margin: 0; font-weight: 600; font-size: 19px">Part de dossiers complets au premier passage</p></div>
+<div style="padding: 24px; border-radius: 18px; background: #F1F4F2"><p style="margin: 0; font-weight: 600; font-size: 19px">Délai entre le dépôt du dossier et l'ouverture</p></div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
+<h2 style="flex: 1 1 240px; margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Méthode et limites</h2>
+<div style="flex: 999 1 520px; min-width: 0">
+<ol style="margin: 0; padding: 0 0 0 22px; display: flex; flex-direction: column; gap: 10px">
+<li>Recensement des étapes de vigilance client d'après la réglementation CEMAC de lutte contre le blanchiment et la ligne directrice COBAC n° 1-2025 sur l'identification de la clientèle.</li>
+<li>Modélisation du parcours supposé en BPMN, sur trois couloirs, avec les exceptions tracées à part.</li>
+<li>Repérage des attentes du client, notées F1 à F4 sur le schéma.</li>
+<li>Rédaction de cinq pistes en user stories, priorisées en MoSCoW, chacune avec un critère d'acceptation.</li>
+</ol>
+<div style="margin-top: 24px; padding: 20px 24px; border-radius: 16px; border: 1px solid #E3E5E1; background: #FFFFFF">
+<p style="margin: 0; font-weight: 600">Limites</p>
+<p style="margin: 6px 0 0; font-size: 15px; color: #4A504E">Aucune donnée interne de banque n'a été utilisée. Le parcours est supposé et doit être confirmé avec un conseiller avant toute décision. Les pistes sont des bases de discussion, pas des recommandations.</p>
+</div>
+</div>
+</section>
+
+<section style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding: 32px; margin-bottom: 56px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<div>
+<p style="margin: 0; font-weight: 600; font-size: 20px">L'étude complète</p>
+<p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">2 pages A4 : schéma BPMN, points à vérifier, user stories, méthode.</p>
+</div>
+<a href="#" class="btn btn-main" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px">Télécharger le PDF</a>
+</section>
+
+<ProjectNav
+  prev={{ href: "/projets", eyebrow: "Retour", title: "Tous les projets" }}
+  next={{ href: "/projet-ndako-tech", eyebrow: "Projet suivant", title: "Ndako Tech" }}
+/>
+
+</BaseLayout>
