@@ -8,57 +8,57 @@ import ProjectNav from '../components/ProjectNav.astro';
   active="projets"
 >
 
-<p style="margin: 40px 0 0; font-size: 14px; color: #5B6160"><a href="/projets" class="lnk">Projets</a><span aria-hidden="true" style="margin: 0 10px">/</span>Tableau de bord ventes et SAV</p>
+<p class="breadcrumb"><a href="/projets" class="lnk">Projets</a><span class="breadcrumb__sep" aria-hidden="true">/</span>Tableau de bord ventes et SAV</p>
 
-<section style="padding: 32px 0 56px">
-<p style="margin: 0; display: flex; flex-wrap: wrap; gap: 8px">
-<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Analyse de données</span>
-<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Tableau de bord</span>
-<span style="padding: 4px 12px; border-radius: 999px; background: #F1F2EF; color: #4A504E; font-size: 13px">Secteur automobile</span>
+<section class="pj-head">
+<p class="pj-tags">
+<span class="tag tag--accent tag--strong">Analyse de données</span>
+<span class="tag tag--accent tag--strong">Tableau de bord</span>
+<span class="tag tag--neutral">Secteur automobile</span>
 </p>
-<h1 style="margin: 24px 0 0; max-width: 20ch; font-weight: 600; font-size: 56px; line-height: 1.06; letter-spacing: -0.03em">Tableau de bord ventes et SAV</h1>
-<p style="margin: 24px 0 0; max-width: 62ch; font-size: 20px; line-height: 1.5; color: #4A504E">Deux pages sous Looker Studio pour suivre les ventes d'un constructeur automobile fictif et comprendre ce que son service après-vente reçoit, modèle par modèle.</p>
+<h1 class="page-title pj-title pj-title--narrow">Tableau de bord ventes et SAV</h1>
+<p class="pj-lead">Deux pages sous Looker Studio pour suivre les ventes d'un constructeur automobile fictif et comprendre ce que son service après-vente reçoit, modèle par modèle.</p>
 
-<dl style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 40px 0 0; padding: 24px 0; border-top: 1px solid #E3E5E1; border-bottom: 1px solid #E3E5E1">
-<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Date</dt><dd style="margin: 4px 0 0; font-weight: 500">[DATE]</dd></div>
-<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Contexte</dt><dd style="margin: 4px 0 0; font-weight: 500">TP certifiant IBM</dd></div>
-<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Rôle</dt><dd style="margin: 4px 0 0; font-weight: 500">Réalisé seul</dd></div>
-<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Outil</dt><dd style="margin: 4px 0 0; font-weight: 500">Looker Studio</dd></div>
+<dl class="pj-meta">
+<div><dt class="pj-meta__label">Date</dt><dd class="pj-meta__val">[DATE]</dd></div>
+<div><dt class="pj-meta__label">Contexte</dt><dd class="pj-meta__val">TP certifiant IBM</dd></div>
+<div><dt class="pj-meta__label">Rôle</dt><dd class="pj-meta__val">Réalisé seul</dd></div>
+<div><dt class="pj-meta__label">Outil</dt><dd class="pj-meta__val">Looker Studio</dd></div>
 </dl>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px">
-<a href="https://datastudio.google.com/reporting/6512df5d-7f2c-45db-ab47-6b740c6bb6ee" class="btn btn-main" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px">Ouvrir le tableau de bord</a>
-<a href="#" class="btn btn-line" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; border: 1px solid #D5D9D4; color: #17191A; text-decoration: none; font-weight: 500; font-size: 16px">Télécharger en PDF</a>
+<div class="pj-actions">
+<a href="https://datastudio.google.com/reporting/6512df5d-7f2c-45db-ab47-6b740c6bb6ee" class="btn btn--main">Ouvrir le tableau de bord</a>
+<a href="#" class="btn btn--line">Télécharger en PDF</a>
 </div>
 </section>
 
-<section aria-label="Chiffres clés" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; padding-bottom: 88px">
-<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">58 118</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">véhicules vendus</p></div>
-<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">78,4 M$</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">de profit</p></div>
-<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">19,4</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">quantité moyenne vendue</p></div>
-<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">5</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">modèles suivis</p></div>
+<section class="kpis section" aria-label="Chiffres clés">
+<div class="stat"><p class="stat__num">58 118</p><p class="stat__label">véhicules vendus</p></div>
+<div class="stat"><p class="stat__num">78,4 M$</p><p class="stat__label">de profit</p></div>
+<div class="stat"><p class="stat__num">19,4</p><p class="stat__label">quantité moyenne vendue</p></div>
+<div class="stat"><p class="stat__num">5</p><p class="stat__label">modèles suivis</p></div>
 </section>
 
-<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
-<h2 style="flex: 1 1 240px; margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">La question de départ</h2>
-<div style="flex: 999 1 520px; min-width: 0">
-<p style="margin: 0; font-size: 19px; line-height: 1.55">Un constructeur veut savoir, sur un seul écran, quels modèles se vendent et rapportent le plus, puis quels modèles et quels systèmes du véhicule pèsent le plus sur son service après-vente.</p>
-<p style="margin: 16px 0 0; color: #4A504E">Le travail a été réalisé dans le cadre de la formation IBM System Analyst, sur un jeu de données fictif fourni par le cours.</p>
+<section class="split section">
+<h2 class="section-title split__aside">La question de départ</h2>
+<div class="split__body">
+<p class="q-lead">Un constructeur veut savoir, sur un seul écran, quels modèles se vendent et rapportent le plus, puis quels modèles et quels systèmes du véhicule pèsent le plus sur son service après-vente.</p>
+<p class="q-note">Le travail a été réalisé dans le cadre de la formation IBM System Analyst, sur un jeu de données fictif fourni par le cours.</p>
 </div>
 </section>
 
-<section style="padding-bottom: 88px">
-<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Les deux pages</h2>
-<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">La première page répond à la question des ventes, la seconde à celle du service après-vente.</p>
-<div style="display: flex; flex-direction: column; gap: 20px">
+<section class="section">
+<h2 class="section-title">Les deux pages</h2>
+<p class="sec-intro">La première page répond à la question des ventes, la seconde à celle du service après-vente.</p>
+<div class="pages-list">
 
-<figure style="display: flex; flex-wrap: wrap; gap: 32px; margin: 0; padding: 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<div style="flex: 3 1 480px; min-width: 0; padding: 16px; border-radius: 16px; background: #F1F4F2">
-<img src="/images/tableau-de-bord-page-1.webp" alt="Page Ventes du tableau de bord : trois indicateurs clés, quantités vendues par modèle et profit par identifiant" style="display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid #D5DCD7; background: #FFFFFF" />
+<figure class="page-fig">
+<div class="page-fig__media">
+<img class="page-fig__img" src="/images/tableau-de-bord-page-1.webp" alt="Page Ventes du tableau de bord : trois indicateurs clés, quantités vendues par modèle et profit par identifiant" />
 </div>
-<figcaption style="flex: 2 1 280px; min-width: 0; padding: 8px 8px 8px 0">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">Page 1</p>
-<p style="margin: 6px 0 0; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Ventes</p>
-<ul style="margin: 14px 0 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; color: #4A504E; font-size: 16px">
+<figcaption class="page-fig__cap">
+<p class="eyebrow eyebrow--accent">Page 1</p>
+<p class="page-fig__title">Ventes</p>
+<ul class="page-fig__list">
 <li>Trois indicateurs en tête de page : quantité vendue, profit, quantité moyenne par vente.</li>
 <li>Quantités vendues par modèle, du plus vendu au moins vendu.</li>
 <li>Profit par [DIMENSION À PRÉCISER], sur les 10 premières valeurs.</li>
@@ -66,14 +66,14 @@ import ProjectNav from '../components/ProjectNav.astro';
 </figcaption>
 </figure>
 
-<figure style="display: flex; flex-wrap: wrap; flex-direction: row-reverse; gap: 32px; margin: 0; padding: 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<div style="flex: 3 1 480px; min-width: 0; padding: 16px; border-radius: 16px; background: #F1F4F2">
-<img src="/images/tableau-de-bord-page-2.webp" alt="Page Service du tableau de bord : unités de service par modèle, sentiment client, quantité vendue et profit par mois, tableau croisé modèle et système concerné" style="display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid #D5DCD7; background: #FFFFFF" />
+<figure class="page-fig page-fig--reverse">
+<div class="page-fig__media">
+<img class="page-fig__img" src="/images/tableau-de-bord-page-2.webp" alt="Page Service du tableau de bord : unités de service par modèle, sentiment client, quantité vendue et profit par mois, tableau croisé modèle et système concerné" />
 </div>
-<figcaption style="flex: 2 1 280px; min-width: 0; padding: 8px 0 8px 8px">
-<p style="margin: 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #3F6B57">Page 2</p>
-<p style="margin: 6px 0 0; font-weight: 600; font-size: 24px; letter-spacing: -0.02em">Service après-vente</p>
-<ul style="margin: 14px 0 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; color: #4A504E; font-size: 16px">
+<figcaption class="page-fig__cap page-fig__cap--reverse">
+<p class="eyebrow eyebrow--accent">Page 2</p>
+<p class="page-fig__title">Service après-vente</p>
+<ul class="page-fig__list">
 <li>Unités traitées par le service, par modèle.</li>
 <li>Sentiment des clients : positif, neutre ou négatif.</li>
 <li>Quantité vendue et profit, mois par mois.</li>
@@ -85,98 +85,98 @@ import ProjectNav from '../components/ProjectNav.astro';
 </div>
 </section>
 
-<section style="padding-bottom: 88px">
-<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Où se concentre le service après-vente</h2>
-<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Unités traitées par le service, par modèle et par système concerné, en milliers. Plus la case est foncée, plus le volume est élevé.</p>
-<div style="padding: 24px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1; overflow-x: auto">
-<table style="width: 100%; min-width: 620px; border-collapse: separate; border-spacing: 4px; font-size: 16px; text-align: right">
-<caption style="position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0)">Unités de service après-vente en milliers, par modèle et par système concerné</caption>
+<section class="section">
+<h2 class="section-title">Où se concentre le service après-vente</h2>
+<p class="sec-intro">Unités traitées par le service, par modèle et par système concerné, en milliers. Plus la case est foncée, plus le volume est élevé.</p>
+<div class="table-wrap">
+<table class="heatmap">
+<caption class="sr-only">Unités de service après-vente en milliers, par modèle et par système concerné</caption>
 <thead>
-<tr style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">
-<th scope="col" style="text-align: left; font-weight: 400; padding: 8px 12px">Modèle</th>
-<th scope="col" style="font-weight: 400; padding: 8px 12px">Airbag</th>
-<th scope="col" style="font-weight: 400; padding: 8px 12px">Suspension</th>
-<th scope="col" style="font-weight: 400; padding: 8px 12px">Sièges [À CONFIRMER]</th>
-<th scope="col" style="font-weight: 400; padding: 8px 12px">Moteur</th>
-<th scope="col" style="font-weight: 400; padding: 8px 12px">Pneus</th>
+<tr class="heatmap__head">
+<th scope="col" class="heatmap__col heatmap__col--left">Modèle</th>
+<th scope="col" class="heatmap__col">Airbag</th>
+<th scope="col" class="heatmap__col">Suspension</th>
+<th scope="col" class="heatmap__col">Sièges [À CONFIRMER]</th>
+<th scope="col" class="heatmap__col">Moteur</th>
+<th scope="col" class="heatmap__col">Pneus</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Beaufort</th>
-<td style="padding: 12px; border-radius: 8px; background: #3F6B57; color: #FFFFFF; font-weight: 600">52,5</td>
-<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">31,4</td>
-<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">3,4</td>
-<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">20,8</td>
-<td style="padding: 12px; border-radius: 8px; background: #FBFBF9; color: #5B6160">aucune</td>
+<th scope="row" class="heatmap__row">Beaufort</th>
+<td class="heat heat--5">52,5</td>
+<td class="heat heat--4">31,4</td>
+<td class="heat heat--1">3,4</td>
+<td class="heat heat--3">20,8</td>
+<td class="heat heat--0">aucune</td>
 </tr>
 <tr>
-<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Champlain</th>
-<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">9,9</td>
-<td style="padding: 12px; border-radius: 8px; background: #3F6B57; color: #FFFFFF; font-weight: 600">60,9</td>
-<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">44,4</td>
-<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">7,7</td>
-<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">20,9</td>
+<th scope="row" class="heatmap__row">Champlain</th>
+<td class="heat heat--1">9,9</td>
+<td class="heat heat--5">60,9</td>
+<td class="heat heat--4">44,4</td>
+<td class="heat heat--1">7,7</td>
+<td class="heat heat--3">20,9</td>
 </tr>
 <tr>
-<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Labrador</th>
-<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">32,2</td>
-<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">15,5</td>
-<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">13,2</td>
-<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">30,1</td>
-<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">30,3</td>
+<th scope="row" class="heatmap__row">Labrador</th>
+<td class="heat heat--4">32,2</td>
+<td class="heat heat--2">15,5</td>
+<td class="heat heat--2">13,2</td>
+<td class="heat heat--4">30,1</td>
+<td class="heat heat--4">30,3</td>
 </tr>
 <tr>
-<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Hudson</th>
-<td style="padding: 12px; border-radius: 8px; background: #9DBDA9">33,1</td>
-<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">4,5</td>
-<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">20,9</td>
-<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">26,8</td>
-<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">11,2</td>
+<th scope="row" class="heatmap__row">Hudson</th>
+<td class="heat heat--4">33,1</td>
+<td class="heat heat--1">4,5</td>
+<td class="heat heat--3">20,9</td>
+<td class="heat heat--3">26,8</td>
+<td class="heat heat--2">11,2</td>
 </tr>
 <tr>
-<th scope="row" style="text-align: left; font-weight: 600; padding: 12px">Salish</th>
-<td style="padding: 12px; border-radius: 8px; background: #C2D6C9">21,2</td>
-<td style="padding: 12px; border-radius: 8px; background: #FBFBF9; color: #5B6160">aucune</td>
-<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">14,2</td>
-<td style="padding: 12px; border-radius: 8px; background: #F1F4F2">3,3</td>
-<td style="padding: 12px; border-radius: 8px; background: #DCE7E0">17,3</td>
+<th scope="row" class="heatmap__row">Salish</th>
+<td class="heat heat--3">21,2</td>
+<td class="heat heat--0">aucune</td>
+<td class="heat heat--2">14,2</td>
+<td class="heat heat--1">3,3</td>
+<td class="heat heat--2">17,3</td>
 </tr>
 </tbody>
 </table>
 </div>
 </section>
 
-<section style="padding-bottom: 88px">
-<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Ce que le tableau de bord fait ressortir</h2>
-<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Trois lectures, à confirmer avec les équipes ventes et après-vente avant toute décision.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px">
-<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<h3 style="margin: 0; font-weight: 600; font-size: 19px">Champlain, peu vendu mais très présent au service</h3>
-<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">C'est le modèle le moins vendu, et pourtant le deuxième en volume de service. À vérifier : les unités de service et les quantités vendues mesurent-elles la même chose ?</p>
+<section class="section">
+<h2 class="section-title">Ce que le tableau de bord fait ressortir</h2>
+<p class="sec-intro">Trois lectures, à confirmer avec les équipes ventes et après-vente avant toute décision.</p>
+<div class="readings-grid">
+<article class="info-card">
+<h3 class="reading__title">Champlain, peu vendu mais très présent au service</h3>
+<p class="info-card__text">C'est le modèle le moins vendu, et pourtant le deuxième en volume de service. À vérifier : les unités de service et les quantités vendues mesurent-elles la même chose ?</p>
 </article>
-<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<h3 style="margin: 0; font-weight: 600; font-size: 19px">Deux couples modèle et système dominent</h3>
-<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">La suspension du Champlain (60,9 milliers d'unités) et l'airbag du Beaufort (52,5 milliers) sont les deux plus fortes valeurs du tableau croisé.</p>
+<article class="info-card">
+<h3 class="reading__title">Deux couples modèle et système dominent</h3>
+<p class="info-card__text">La suspension du Champlain (60,9 milliers d'unités) et l'airbag du Beaufort (52,5 milliers) sont les deux plus fortes valeurs du tableau croisé.</p>
 </article>
-<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<h3 style="margin: 0; font-weight: 600; font-size: 19px">Hudson en tête des ventes</h3>
-<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Hudson est le modèle le plus vendu, devant Labrador et Salish. Le sentiment des clients est majoritairement positif.</p>
+<article class="info-card">
+<h3 class="reading__title">Hudson en tête des ventes</h3>
+<p class="info-card__text">Hudson est le modèle le plus vendu, devant Labrador et Salish. Le sentiment des clients est majoritairement positif.</p>
 </article>
 </div>
 </section>
 
-<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
-<h2 style="flex: 1 1 240px; margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Méthode et limites</h2>
-<div style="flex: 999 1 520px; min-width: 0">
-<ol style="margin: 0; padding: 0 0 0 22px; display: flex; flex-direction: column; gap: 10px">
+<section class="split section">
+<h2 class="section-title split__aside">Méthode et limites</h2>
+<div class="split__body">
+<ol class="method-steps">
 <li>Une page par question : les ventes d'abord, le service après-vente ensuite.</li>
 <li>Les indicateurs clés en haut, puis le détail par modèle.</li>
 <li>Un graphique par usage : barres pour comparer les modèles, carte proportionnelle pour le sentiment, graphique combiné pour les mois, tableau croisé coloré pour repérer les concentrations.</li>
 </ol>
-<div style="margin-top: 24px; padding: 20px 24px; border-radius: 16px; border: 1px solid #E3E5E1; background: #FFFFFF">
-<p style="margin: 0; font-weight: 600">Limites et améliorations prévues</p>
-<ul style="margin: 8px 0 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; color: #4A504E">
+<div class="callout">
+<p class="callout__title">Limites et améliorations prévues</p>
+<ul class="callout__list">
 <li>Les données sont fictives et fournies par le cours.</li>
 <li>Les mois sont classés par profit et non dans l'ordre du calendrier, ce qui rend la tendance difficile à lire.</li>
 <li>Le graphique de profit n'indique pas ce que représentent ses identifiants.</li>
@@ -186,12 +186,14 @@ import ProjectNav from '../components/ProjectNav.astro';
 </div>
 </section>
 
-<section style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding: 32px; margin-bottom: 56px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<section class="cta-section">
+<div class="cta-box">
 <div>
-<p style="margin: 0; font-weight: 600; font-size: 20px">Le tableau de bord en ligne</p>
-<p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">Deux pages interactives sous Looker Studio.</p>
+<p class="cta-box__title">Le tableau de bord en ligne</p>
+<p class="cta-box__sub">Deux pages interactives sous Looker Studio.</p>
 </div>
-<a href="https://datastudio.google.com/reporting/6512df5d-7f2c-45db-ab47-6b740c6bb6ee" class="btn btn-main" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px">Ouvrir le tableau de bord</a>
+<a href="https://datastudio.google.com/reporting/6512df5d-7f2c-45db-ab47-6b740c6bb6ee" class="btn btn--main">Ouvrir le tableau de bord</a>
+</div>
 </section>
 
 <ProjectNav
@@ -200,3 +202,45 @@ import ProjectNav from '../components/ProjectNav.astro';
 />
 
 </BaseLayout>
+
+<style>
+.pages-list { display: flex; flex-direction: column; gap: 20px; }
+.page-fig {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin: 0;
+  padding: 24px;
+  border-radius: var(--radius-card);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+.page-fig--reverse { flex-direction: row-reverse; }
+.page-fig__media { flex: 3 1 480px; min-width: 0; padding: 16px; border-radius: var(--radius-md); background: var(--color-surface-muted); }
+.page-fig__img { display: block; width: 100%; height: auto; border-radius: 10px; border: 1px solid #D5DCD7; background: var(--color-surface); }
+.page-fig__cap { flex: 2 1 280px; min-width: 0; padding: 8px 8px 8px 0; }
+.page-fig__cap--reverse { padding: 8px 0 8px 8px; }
+.page-fig__title { margin: 6px 0 0; font-weight: 600; font-size: 24px; letter-spacing: -0.02em; }
+.page-fig__list { margin: 14px 0 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 8px; color: var(--color-text-muted); font-size: 16px; }
+
+.table-wrap { padding: 24px; border-radius: var(--radius-card); background: var(--color-surface); border: 1px solid var(--color-border); overflow-x: auto; }
+.heatmap { width: 100%; min-width: 620px; border-collapse: separate; border-spacing: 4px; font-size: 16px; text-align: right; }
+.heatmap__head { font-family: var(--font-mono); font-size: 12px; color: var(--color-text-subtle); }
+.heatmap__col { font-weight: 400; padding: 8px 12px; }
+.heatmap__col--left { text-align: left; }
+.heatmap__row { text-align: left; font-weight: 600; padding: 12px; }
+.heat { padding: 12px; border-radius: 8px; }
+.heat--5 { background: #3F6B57; color: #FFFFFF; font-weight: 600; }
+.heat--4 { background: #9DBDA9; }
+.heat--3 { background: #C2D6C9; }
+.heat--2 { background: #DCE7E0; }
+.heat--1 { background: #F1F4F2; }
+.heat--0 { background: #FBFBF9; color: var(--color-text-subtle); }
+
+.readings-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 12px; }
+.reading__title { margin: 0; font-weight: 600; font-size: 19px; }
+
+.callout__list { margin: 8px 0 0; padding: 0 0 0 20px; display: flex; flex-direction: column; gap: 6px; font-size: 15px; color: var(--color-text-muted); }
+
+.cta-section { margin-bottom: 56px; }
+</style>

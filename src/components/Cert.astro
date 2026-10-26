@@ -18,24 +18,61 @@ const { title, issuer, logo, platform, platformLogo, note, muted = false } = Ast
 const logoExists = (file?: string) => !!file && existsSync(join(process.cwd(), 'public', 'logos', file));
 const hasIssuerLogo = logoExists(logo);
 const hasPlatformLogo = logoExists(platformLogo);
-
-const bg = muted ? '#F1F4F2' : '#FFFFFF';
-const borderColor = muted ? '#F1F4F2' : '#E3E5E1';
-const noteColor = muted ? '#3F6B57' : '#5B6160';
 ---
-<div class="card" style={`display: flex; flex-direction: column; gap: 16px; padding: 22px; border-radius: 18px; background: ${bg}; border: 1px solid ${borderColor}`}>
-<div style="display: flex; align-items: center; flex-wrap: wrap; gap: 12px; min-height: 30px">
+<div class:list={["card", "cert", { "cert--muted": muted }]}>
+<div class="cert__logos">
 {hasIssuerLogo
-  ? <img src={`/logos/${logo}`} alt={issuer} height="28" style="display: block; height: 28px; width: auto; max-width: 120px; object-fit: contain" />
-  : <span style="display: inline-flex; align-items: center; height: 26px; padding: 0 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">{issuer}</span>
+  ? <img src={`/logos/${logo}`} alt={issuer} class="cert__logo" />
+  : <span class="cert__badge cert__badge--issuer">{issuer}</span>
 }
 {platform && (hasPlatformLogo
-  ? <img src={`/logos/${platformLogo}`} alt={platform} height="24" style="display: block; height: 24px; width: auto; max-width: 110px; object-fit: contain" />
-  : <span style="display: inline-flex; align-items: center; height: 24px; padding: 0 10px; border-radius: 999px; background: #F1F2EF; color: #4A504E; font-size: 12px">{platform}</span>
+  ? <img src={`/logos/${platformLogo}`} alt={platform} class="cert__logo cert__logo--platform" />
+  : <span class="cert__badge cert__badge--platform">{platform}</span>
 )}
 </div>
 <div>
-<p style="margin: 0; font-weight: 600">{title}</p>
-{note && <p style={`margin: 6px 0 0; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: ${noteColor}`}>{note}</p>}
+<p class="cert__title">{title}</p>
+{note && <p class:list={["cert__note", { "cert__note--accent": muted }]}>{note}</p>}
 </div>
 </div>
+
+<style>
+.cert {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 22px;
+  border-radius: var(--radius-box);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+}
+.cert--muted { background: var(--color-surface-muted); border-color: var(--color-surface-muted); }
+.cert__logos {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 12px;
+  min-height: 30px;
+}
+.cert__logo { display: block; height: 28px; width: auto; max-width: 120px; object-fit: contain; }
+.cert__logo--platform { height: 24px; max-width: 110px; }
+.cert__badge { display: inline-flex; align-items: center; border-radius: var(--radius-pill); }
+.cert__badge--issuer {
+  height: 26px;
+  padding: 0 12px;
+  background: var(--color-accent-soft);
+  color: var(--color-accent-strong);
+  font-size: 13px;
+  font-weight: 500;
+}
+.cert__badge--platform {
+  height: 24px;
+  padding: 0 10px;
+  background: #F1F2EF;
+  color: var(--color-text-muted);
+  font-size: 12px;
+}
+.cert__title { margin: 0; font-weight: 600; }
+.cert__note { margin: 6px 0 0; font-family: var(--font-mono); font-size: 12px; color: var(--color-text-subtle); }
+.cert__note--accent { color: var(--color-accent); }
+</style>

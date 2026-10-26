@@ -1,0 +1,33 @@
+:root {
+  /* Couleurs */
+  --color-ink: #17191A;            /* texte principal */
+  --color-text-muted: #4A504E;     /* texte secondaire */
+  --color-text-subtle: #5B6160;    /* légendes, mono */
+  --color-accent: #3F6B57;         /* vert, actions */
+  --color-accent-strong: #2F5444;  /* vert foncé, survol et libellés */
+  --color-accent-soft: #E6EEE9;    /* fond de pastille verte */
+  --color-bg: #FBFBF9;             /* fond de page */
+  --color-surface: #FFFFFF;        /* cartes */
+  --color-surface-muted: #F1F4F2;  /* panneaux et vignettes */
+  --color-border: #E3E5E1;         /* bordures */
+  --color-border-strong: #D5D9D4;  /* bordure de bouton ligne */
+  --color-dark: #22302A;           /* bloc contact */
+  --color-on-dark: #FFFFFF;
+  --color-on-dark-muted: #C9D5CE;
+
+  /* Rayons */
+  --radius-pill: 999px;
+  --radius-card: 24px;
+  --radius-box: 18px;
+  --radius-md: 16px;
+  --radius-sm: 12px;
+  --radius-contact: 28px;
+
+  /* Espacements */
+  --space-section: 88px;           /* bas de section courant */
+  --space-section-lg: 104px;       /* bas de section large */
+
+  /* Typographie */
+  --font-sans: 'Instrument Sans', system-ui, sans-serif;
+  --font-mono: 'IBM Plex Mono', monospace;
+}

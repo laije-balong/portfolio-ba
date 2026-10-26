@@ -10,17 +10,51 @@ interface Props {
 }
 const { prev, next } = Astro.props;
 ---
-<nav aria-label="Autres projets" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 12px; padding-bottom: 104px">
+<nav class="pager" aria-label="Autres projets">
 {prev && (
-<a href={prev.href} class="card" style="display: flex; align-items: center; gap: 16px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1; text-decoration: none; color: #17191A">
-<span aria-hidden="true" style="flex: none; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 999px; background: #F1F4F2"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F6B57" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6l-6 6 6 6"></path></svg></span>
-<span style="min-width: 0"><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">{prev.eyebrow}</span><span style="display: block; margin-top: 6px; font-weight: 600; font-size: 19px">{prev.title}</span></span>
+<a href={prev.href} class="card pager__card">
+<span class="pager__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F6B57" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M14 6l-6 6 6 6"></path></svg></span>
+<span class="pager__text"><span class="eyebrow">{prev.eyebrow}</span><span class="pager__title">{prev.title}</span></span>
 </a>
 )}
 {next && (
-<a href={next.href} class="card" style="display: flex; align-items: center; justify-content: flex-end; gap: 16px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1; text-decoration: none; color: #17191A; text-align: right">
-<span style="min-width: 0"><span style="display: block; font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">{next.eyebrow}</span><span style="display: block; margin-top: 6px; font-weight: 600; font-size: 19px">{next.title}</span></span>
-<span aria-hidden="true" style="flex: none; display: inline-flex; align-items: center; justify-content: center; width: 40px; height: 40px; border-radius: 999px; background: #F1F4F2"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F6B57" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6l6 6-6 6"></path></svg></span>
+<a href={next.href} class="card pager__card pager__card--next">
+<span class="pager__text"><span class="eyebrow">{next.eyebrow}</span><span class="pager__title">{next.title}</span></span>
+<span class="pager__icon" aria-hidden="true"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#3F6B57" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M10 6l6 6-6 6"></path></svg></span>
 </a>
 )}
 </nav>
+
+<style>
+.pager {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 12px;
+  padding-bottom: var(--space-section-lg);
+}
+.pager__card {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 24px;
+  border-radius: var(--radius-box);
+  background: var(--color-surface);
+  border: 1px solid var(--color-border);
+  text-decoration: none;
+  color: var(--color-ink);
+}
+.pager__card--next { justify-content: flex-end; text-align: right; }
+.pager__icon {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: var(--radius-pill);
+  background: var(--color-surface-muted);
+}
+.pager__text { min-width: 0; }
+.pager__text .eyebrow { display: block; }
+.pager__title { display: block; margin-top: 6px; font-weight: 600; font-size: 19px; }
+</style>

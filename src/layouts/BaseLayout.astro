@@ -1,4 +1,5 @@
 ---
+import '../styles/tokens.css';
 import '../styles/global.css';
 import Header from '../components/Header.astro';
 import Contact from '../components/Contact.astro';
@@ -25,8 +26,8 @@ const { title, description, active = null, current = false } = Astro.props;
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Instrument+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" />
 </head>
 <body>
-<div style="background: #FBFBF9; color: #17191A; font-family: 'Instrument Sans', system-ui, sans-serif; font-size: 17px; line-height: 1.6; min-height: 100%">
-<div style="max-width: 1120px; margin: 0 auto; padding: 0 24px">
+<div class="page">
+<div class="container">
 <Header active={active} current={current} />
 <slot />
 <Contact />

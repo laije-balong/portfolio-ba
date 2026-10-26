@@ -1,7 +1,21 @@
-<footer style="display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px; padding: 32px 0 48px; font-size: 14px; color: #5B6160">
-<p style="margin: 0">Laije Belthassar BALONG, Brazzaville</p>
-<div style="display: flex; gap: 24px">
+<footer class="site-footer">
+<p class="site-footer__name">Laije Belthassar BALONG, Brazzaville</p>
+<div class="site-footer__links">
 <a href="https://www.credly.com/users/laije-belthassar">Credly</a>
 <a href="#">CV en PDF</a>
 </div>
 </footer>
+
+<style>
+.site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 32px 0 48px;
+  font-size: 14px;
+  color: var(--color-text-subtle);
+}
+.site-footer__name { margin: 0; }
+.site-footer__links { display: flex; gap: 24px; }
+</style>

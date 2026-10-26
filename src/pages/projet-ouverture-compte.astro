@@ -8,54 +8,54 @@ import ProjectNav from '../components/ProjectNav.astro';
   active="projets"
 >
 
-<p style="margin: 40px 0 0; font-size: 14px; color: #5B6160"><a href="/projets" class="lnk">Projets</a><span aria-hidden="true" style="margin: 0 10px">/</span>Ouverture d'un compte particulier</p>
+<p class="breadcrumb"><a href="/projets" class="lnk">Projets</a><span class="breadcrumb__sep" aria-hidden="true">/</span>Ouverture d'un compte particulier</p>
 
-<section style="padding: 32px 0 56px">
-<p style="margin: 0; display: flex; flex-wrap: wrap; gap: 8px">
-<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Modélisation BPMN</span>
-<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 13px; font-weight: 500">Rédaction d'exigences</span>
-<span style="padding: 4px 12px; border-radius: 999px; background: #F1F2EF; color: #4A504E; font-size: 13px">Secteur bancaire</span>
+<section class="pj-head">
+<p class="pj-tags">
+<span class="tag tag--accent tag--strong">Modélisation BPMN</span>
+<span class="tag tag--accent tag--strong">Rédaction d'exigences</span>
+<span class="tag tag--neutral">Secteur bancaire</span>
 </p>
-<h1 style="margin: 24px 0 0; max-width: 20ch; font-weight: 600; font-size: 56px; line-height: 1.06; letter-spacing: -0.03em">Ouverture d'un compte particulier en agence</h1>
-<p style="margin: 24px 0 0; max-width: 62ch; font-size: 20px; line-height: 1.5; color: #4A504E">Le parcours supposé du client, du premier renseignement au retrait de la carte, modélisé en BPMN pour repérer où il attend et proposer des pistes à discuter avec les équipes métier.</p>
+<h1 class="page-title pj-title pj-title--narrow">Ouverture d'un compte particulier en agence</h1>
+<p class="pj-lead">Le parcours supposé du client, du premier renseignement au retrait de la carte, modélisé en BPMN pour repérer où il attend et proposer des pistes à discuter avec les équipes métier.</p>
 
-<dl style="display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 16px; margin: 40px 0 0; padding: 24px 0; border-top: 1px solid #E3E5E1; border-bottom: 1px solid #E3E5E1">
-<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Date</dt><dd style="margin: 4px 0 0; font-weight: 500">Octobre 2026</dd></div>
-<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Contexte</dt><dd style="margin: 4px 0 0; font-weight: 500">Étude personnelle</dd></div>
-<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Rôle</dt><dd style="margin: 4px 0 0; font-weight: 500">Réalisée seul</dd></div>
-<div><dt style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Livrable</dt><dd style="margin: 4px 0 0; font-weight: 500">Étude de 2 pages A4</dd></div>
+<dl class="pj-meta">
+<div><dt class="pj-meta__label">Date</dt><dd class="pj-meta__val">Octobre 2026</dd></div>
+<div><dt class="pj-meta__label">Contexte</dt><dd class="pj-meta__val">Étude personnelle</dd></div>
+<div><dt class="pj-meta__label">Rôle</dt><dd class="pj-meta__val">Réalisée seul</dd></div>
+<div><dt class="pj-meta__label">Livrable</dt><dd class="pj-meta__val">Étude de 2 pages A4</dd></div>
 </dl>
-<div style="display: flex; flex-wrap: wrap; gap: 14px; margin-top: 32px">
-<a href="#" class="btn btn-main" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px">Télécharger l'étude en PDF</a>
-<a href="#schema" class="btn btn-line" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; border: 1px solid #D5D9D4; color: #17191A; text-decoration: none; font-weight: 500; font-size: 16px">Voir le schéma</a>
+<div class="pj-actions">
+<a href="#" class="btn btn--main">Télécharger l'étude en PDF</a>
+<a href="#schema" class="btn btn--line">Voir le schéma</a>
 </div>
 </section>
 
-<section aria-label="Chiffres clés" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 12px; padding-bottom: 88px">
-<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">9</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">étapes, de la question au retrait de la carte</p></div>
-<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">3</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">couloirs : client, agence, back-office</p></div>
-<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">4</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">points à vérifier avec les équipes</p></div>
-<div style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1"><p style="margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1">5</p><p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">pistes en user stories, priorisées en MoSCoW</p></div>
+<section class="kpis section" aria-label="Chiffres clés">
+<div class="stat"><p class="stat__num">9</p><p class="stat__label">étapes, de la question au retrait de la carte</p></div>
+<div class="stat"><p class="stat__num">3</p><p class="stat__label">couloirs : client, agence, back-office</p></div>
+<div class="stat"><p class="stat__num">4</p><p class="stat__label">points à vérifier avec les équipes</p></div>
+<div class="stat"><p class="stat__num">5</p><p class="stat__label">pistes en user stories, priorisées en MoSCoW</p></div>
 </section>
 
-<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
-<h2 style="flex: 1 1 240px; margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">La question de départ</h2>
-<div style="flex: 999 1 520px; min-width: 0">
-<p style="margin: 0; font-size: 19px; line-height: 1.55">Pour ouvrir un compte, un client doit réunir des pièces, passer en agence, attendre des contrôles de conformité, puis revenir. Où perd-il du temps, et à quels moments revient-il sans que ce soit nécessaire ?</p>
-<p style="margin: 16px 0 0; color: #4A504E">Je n'ai jamais ouvert de compte dans la banque étudiée et je n'ai pas accès à son parcours réel. L'étude décrit donc un parcours supposé, à confirmer avec un conseiller.</p>
+<section class="split section">
+<h2 class="section-title split__aside">La question de départ</h2>
+<div class="split__body">
+<p class="q-lead">Pour ouvrir un compte, un client doit réunir des pièces, passer en agence, attendre des contrôles de conformité, puis revenir. Où perd-il du temps, et à quels moments revient-il sans que ce soit nécessaire ?</p>
+<p class="q-note">Je n'ai jamais ouvert de compte dans la banque étudiée et je n'ai pas accès à son parcours réel. L'étude décrit donc un parcours supposé, à confirmer avec un conseiller.</p>
 </div>
 </section>
 
-<section id="schema" style="padding-bottom: 88px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 24px">
+<section class="section" id="schema">
+<div class="sec-head schema-head">
 <div>
-<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Le parcours supposé</h2>
-<p style="margin: 8px 0 0; max-width: 62ch; color: #4A504E">Les pièces sont contrôlées en agence dès le dépôt du dossier. Le back-office ne revient vers le client qu'en cas d'exception. Les repères F1 à F4 signalent les points à vérifier.</p>
+<h2 class="section-title">Le parcours supposé</h2>
+<p class="schema-head__sub">Les pièces sont contrôlées en agence dès le dépôt du dossier. Le back-office ne revient vers le client qu'en cas d'exception. Les repères F1 à F4 signalent les points à vérifier.</p>
 </div>
 </div>
-<figure style="margin: 0; padding: 32px; border-radius: 24px; background: #F1F4F2; display: flex; flex-wrap: wrap; gap: 32px; align-items: flex-start">
-<div style="flex: 999 1 560px; min-width: 0; overflow-x: auto">
-<svg viewBox="0 0 700 860" role="img" aria-label="Schéma BPMN en trois couloirs. Client : 1 se renseigner sur les pièces, 2 réunir les pièces et se rendre en agence. Agence : 3 vérifier les pièces, décision pièces conformes, sinon le client revient avec les pièces manquantes ; 4 saisir la demande et faire signer. Back-office : 5 filtrage des listes et classement du risque, décision contrôle validé, sinon exception avec demande de complément ; 6 ouvrir le compte et attribuer le RIB. Agence : 7 prévenir le client et remettre le RIB. Client : 8 effectuer le dépôt initial, 9 retirer la carte et le chéquier." style="display: block; width: 100%; min-width: 560px; max-width: 760px; height: auto; margin: 0 auto; font-family: 'Instrument Sans', sans-serif">
+<figure class="schema-fig">
+<div class="schema-fig__canvas">
+<svg class="bpmn-tall" viewBox="0 0 700 860" role="img" aria-label="Schéma BPMN en trois couloirs. Client : 1 se renseigner sur les pièces, 2 réunir les pièces et se rendre en agence. Agence : 3 vérifier les pièces, décision pièces conformes, sinon le client revient avec les pièces manquantes ; 4 saisir la demande et faire signer. Back-office : 5 filtrage des listes et classement du risque, décision contrôle validé, sinon exception avec demande de complément ; 6 ouvrir le compte et attribuer le RIB. Agence : 7 prévenir le client et remettre le RIB. Client : 8 effectuer le dépôt initial, 9 retirer la carte et le chéquier.">
 <defs><marker id="ar" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#5B6160"></path></marker></defs>
 <rect x="0.5" y="0.5" width="699" height="859" rx="14" fill="#FFFFFF" stroke="#D5DCD7"></rect>
 <rect x="233" y="40" width="233" height="819" fill="#F7F9F7"></rect>
@@ -154,153 +154,155 @@ import ProjectNav from '../components/ProjectNav.astro';
 <circle cx="116" cy="838" r="13" fill="#FFFFFF" stroke="#17191A" stroke-width="4"></circle>
 </svg>
 </div>
-<figcaption style="flex: 1 1 220px; min-width: 0; font-size: 15px">
-<p style="margin: 0; font-weight: 600">Légende</p>
-<ul style="list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; color: #4A504E">
-<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; width: 18px; height: 18px; border-radius: 50%; border: 2px solid #3F6B57; box-sizing: border-box"></span>Début du parcours</li>
-<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; width: 18px; height: 18px; border-radius: 50%; border: 4px solid #17191A; box-sizing: border-box"></span>Fin du parcours</li>
-<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; width: 14px; height: 14px; margin: 0 2px; transform: rotate(45deg); background: #E6EEE9; border: 1.5px solid #3F6B57"></span>Décision</li>
-<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; width: 18px; height: 0; border-top: 2px dashed #8A918D"></span>Cas d'exception</li>
-<li style="display: flex; align-items: center; gap: 12px"><span aria-hidden="true" style="flex: none; display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 20px; border-radius: 10px; background: #8A5A44; color: #FFFFFF; font-size: 11px; font-weight: 600">F1</span>Point à vérifier</li>
+<figcaption class="legend">
+<p class="legend__title">Légende</p>
+<ul class="legend__list">
+<li class="legend__item"><span class="legend__swatch legend__swatch--start" aria-hidden="true"></span>Début du parcours</li>
+<li class="legend__item"><span class="legend__swatch legend__swatch--end" aria-hidden="true"></span>Fin du parcours</li>
+<li class="legend__item"><span class="legend__swatch legend__swatch--decision" aria-hidden="true"></span>Décision</li>
+<li class="legend__item"><span class="legend__swatch legend__swatch--exception" aria-hidden="true"></span>Cas d'exception</li>
+<li class="legend__item"><span class="legend__swatch legend__swatch--f" aria-hidden="true">F1</span>Point à vérifier</li>
 </ul>
 </figcaption>
 </figure>
 </section>
 
-<section style="padding-bottom: 88px">
-<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Quatre points à vérifier avec les équipes</h2>
-<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Chaque point repère une attente possible entre la demande et la remise de la carte. Je les ai déduits des étapes de vigilance client, sans accès au parcours réel de la banque. Ils servent de base de discussion.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
-<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 22px; border-radius: 11px; background: #8A5A44; color: #FFFFFF; font-size: 12px; font-weight: 600">F1</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Étape 1</span></p>
-<h3 style="margin: 16px 0 0; font-weight: 600; font-size: 19px">Information avant la visite</h3>
-<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Le client découvre la liste des pièces au téléphone ou au guichet. Une pièce oubliée coûte un déplacement.</p>
+<section class="section">
+<h2 class="section-title">Quatre points à vérifier avec les équipes</h2>
+<p class="sec-intro">Chaque point repère une attente possible entre la demande et la remise de la carte. Je les ai déduits des étapes de vigilance client, sans accès au parcours réel de la banque. Ils servent de base de discussion.</p>
+<div class="cards-grid">
+<article class="info-card">
+<p class="info-card__head"><span class="f-badge">F1</span><span class="eyebrow">Étape 1</span></p>
+<h3 class="info-card__title">Information avant la visite</h3>
+<p class="info-card__text">Le client découvre la liste des pièces au téléphone ou au guichet. Une pièce oubliée coûte un déplacement.</p>
 </article>
-<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 22px; border-radius: 11px; background: #8A5A44; color: #FFFFFF; font-size: 12px; font-weight: 600">F2</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Étapes 2 et 3</span></p>
-<h3 style="margin: 16px 0 0; font-weight: 600; font-size: 19px">Retour pour une pièce</h3>
-<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Une pièce absente ou non conforme renvoie le client chez lui. Le contrôle en agence rend les retours du back-office rares.</p>
+<article class="info-card">
+<p class="info-card__head"><span class="f-badge">F2</span><span class="eyebrow">Étapes 2 et 3</span></p>
+<h3 class="info-card__title">Retour pour une pièce</h3>
+<p class="info-card__text">Une pièce absente ou non conforme renvoie le client chez lui. Le contrôle en agence rend les retours du back-office rares.</p>
 </article>
-<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 22px; border-radius: 11px; background: #8A5A44; color: #FFFFFF; font-size: 12px; font-weight: 600">F3</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Étape 5</span></p>
-<h3 style="margin: 16px 0 0; font-weight: 600; font-size: 19px">Suivi du dossier</h3>
-<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Pendant les contrôles, le client ne sait pas où en est son dossier ni quand revenir.</p>
+<article class="info-card">
+<p class="info-card__head"><span class="f-badge">F3</span><span class="eyebrow">Étape 5</span></p>
+<h3 class="info-card__title">Suivi du dossier</h3>
+<p class="info-card__text">Pendant les contrôles, le client ne sait pas où en est son dossier ni quand revenir.</p>
 </article>
-<article style="padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<p style="margin: 0; display: flex; align-items: center; gap: 10px"><span style="display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 22px; border-radius: 11px; background: #8A5A44; color: #FFFFFF; font-size: 12px; font-weight: 600">F4</span><span style="font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #5B6160">Étapes 7 à 9</span></p>
-<h3 style="margin: 16px 0 0; font-weight: 600; font-size: 19px">Dernier passage</h3>
-<p style="margin: 8px 0 0; font-size: 15px; color: #4A504E">Le dépôt initial et le retrait de la carte demandent un nouveau passage en agence.</p>
+<article class="info-card">
+<p class="info-card__head"><span class="f-badge">F4</span><span class="eyebrow">Étapes 7 à 9</span></p>
+<h3 class="info-card__title">Dernier passage</h3>
+<p class="info-card__text">Le dépôt initial et le retrait de la carte demandent un nouveau passage en agence.</p>
 </article>
 </div>
 </section>
 
-<section style="padding-bottom: 88px">
-<div style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px">
-<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Cinq pistes à discuter</h2>
-<p role="img" aria-label="Répartition MoSCoW : 2 Must, 1 Should, 2 Could" style="margin: 0; display: flex; gap: 8px; font-size: 13px">
-<span style="padding: 4px 12px; border-radius: 999px; background: #3F6B57; color: #FFFFFF">2 Must</span>
-<span style="padding: 4px 12px; border-radius: 999px; background: #C9D7CE; color: #17191A">1 Should</span>
-<span style="padding: 4px 12px; border-radius: 999px; background: #E6EEE9; color: #2F5444">2 Could</span>
+<section class="section">
+<div class="sec-head">
+<h2 class="section-title">Cinq pistes à discuter</h2>
+<p class="moscow-pills" role="img" aria-label="Répartition MoSCoW : 2 Must, 1 Should, 2 Could">
+<span class="pill pill--must">2 Must</span>
+<span class="pill pill--should">1 Should</span>
+<span class="pill pill--could">2 Could</span>
 </p>
 </div>
-<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Chaque piste est rédigée en user story, avec un critère d'acceptation au format Étant donné, quand, alors.</p>
-<div style="display: flex; flex-direction: column; gap: 12px">
+<p class="sec-intro">Chaque piste est rédigée en user story, avec un critère d'acceptation au format Étant donné, quand, alors.</p>
+<div class="us-list">
 
-<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US1</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; font-size: 12px">Must</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F1</span>
+<article class="us">
+<p class="us__meta">
+<span class="us__id">US1</span>
+<span class="pill pill--sm pill--must">Must</span>
+<span class="pill pill--sm pill--f">F1</span>
 </p>
-<div style="flex: 1 1 400px; min-width: 0">
-<p style="margin: 0">En tant que futur client, je veux consulter en ligne les pièces exigées selon mon profil (salarié, étudiant, indépendant), afin de venir avec un dossier complet.</p>
-<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné le profil étudiant, quand je le sélectionne, alors la page affiche les pièces exigées pour ce seul profil.</p>
-</div>
-</article>
-
-<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US2</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; font-size: 12px">Must</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F2</span>
-</p>
-<div style="flex: 1 1 400px; min-width: 0">
-<p style="margin: 0">En tant que conseiller, je veux une liste de contrôle des pièces dans l'outil de saisie, afin de vérifier le dossier complet dès le premier passage du client.</p>
-<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné un dossier sans justificatif de domicile, quand je valide la saisie, alors l'outil bloque l'envoi et nomme la pièce manquante.</p>
+<div class="us__body">
+<p>En tant que futur client, je veux consulter en ligne les pièces exigées selon mon profil (salarié, étudiant, indépendant), afin de venir avec un dossier complet.</p>
+<p class="us__crit"><strong class="us__crit-label">Critère.</strong> Étant donné le profil étudiant, quand je le sélectionne, alors la page affiche les pièces exigées pour ce seul profil.</p>
 </div>
 </article>
 
-<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US3</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #C9D7CE; color: #17191A; font-size: 12px">Should</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F3</span>
+<article class="us">
+<p class="us__meta">
+<span class="us__id">US2</span>
+<span class="pill pill--sm pill--must">Must</span>
+<span class="pill pill--sm pill--f">F2</span>
 </p>
-<div style="flex: 1 1 400px; min-width: 0">
-<p style="margin: 0">En tant que client, je veux recevoir un SMS à chaque changement de statut de mon dossier, afin de savoir quand revenir et avec quoi.</p>
-<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné un dossier ouvert, quand mon compte est prêt, alors je reçois un SMS qui indique quoi apporter pour le dépôt initial.</p>
+<div class="us__body">
+<p>En tant que conseiller, je veux une liste de contrôle des pièces dans l'outil de saisie, afin de vérifier le dossier complet dès le premier passage du client.</p>
+<p class="us__crit"><strong class="us__crit-label">Critère.</strong> Étant donné un dossier sans justificatif de domicile, quand je valide la saisie, alors l'outil bloque l'envoi et nomme la pièce manquante.</p>
 </div>
 </article>
 
-<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US4</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 12px">Could</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F2</span>
+<article class="us">
+<p class="us__meta">
+<span class="us__id">US3</span>
+<span class="pill pill--sm pill--should">Should</span>
+<span class="pill pill--sm pill--f">F3</span>
 </p>
-<div style="flex: 1 1 400px; min-width: 0">
-<p style="margin: 0">En tant que futur client, je veux pré-remplir le formulaire et déposer mes pièces avant le rendez-vous, afin de réduire le temps passé en agence.</p>
-<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné un pré-dossier déposé, quand le conseiller ouvre ma demande, alors il retrouve mes informations sans ressaisie.</p>
+<div class="us__body">
+<p>En tant que client, je veux recevoir un SMS à chaque changement de statut de mon dossier, afin de savoir quand revenir et avec quoi.</p>
+<p class="us__crit"><strong class="us__crit-label">Critère.</strong> Étant donné un dossier ouvert, quand mon compte est prêt, alors je reçois un SMS qui indique quoi apporter pour le dépôt initial.</p>
 </div>
 </article>
 
-<article style="display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: 18px; background: #FFFFFF; border: 1px solid #E3E5E1">
-<p style="flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px">
-<span style="font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; padding: 3px 0">US5</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #E6EEE9; color: #2F5444; font-size: 12px">Could</span>
-<span style="padding: 3px 10px; border-radius: 999px; background: #F3EAE5; color: #6E4532; font-size: 12px">F4</span>
+<article class="us">
+<p class="us__meta">
+<span class="us__id">US4</span>
+<span class="pill pill--sm pill--could">Could</span>
+<span class="pill pill--sm pill--f">F2</span>
 </p>
-<div style="flex: 1 1 400px; min-width: 0">
-<p style="margin: 0">En tant que client, je veux verser le dépôt initial par mobile money, afin d'éviter un déplacement de plus.</p>
-<p style="margin: 10px 0 0; font-size: 15px; color: #4A504E"><strong style="font-weight: 600; color: #17191A">Critère.</strong> Étant donné un compte ouvert, quand je paie le dépôt initial par mobile money, alors le compte est crédité et je reçois un reçu.</p>
+<div class="us__body">
+<p>En tant que futur client, je veux pré-remplir le formulaire et déposer mes pièces avant le rendez-vous, afin de réduire le temps passé en agence.</p>
+<p class="us__crit"><strong class="us__crit-label">Critère.</strong> Étant donné un pré-dossier déposé, quand le conseiller ouvre ma demande, alors il retrouve mes informations sans ressaisie.</p>
+</div>
+</article>
+
+<article class="us">
+<p class="us__meta">
+<span class="us__id">US5</span>
+<span class="pill pill--sm pill--could">Could</span>
+<span class="pill pill--sm pill--f">F4</span>
+</p>
+<div class="us__body">
+<p>En tant que client, je veux verser le dépôt initial par mobile money, afin d'éviter un déplacement de plus.</p>
+<p class="us__crit"><strong class="us__crit-label">Critère.</strong> Étant donné un compte ouvert, quand je paie le dépôt initial par mobile money, alors le compte est crédité et je reçois un reçu.</p>
 </div>
 </article>
 
 </div>
 </section>
 
-<section style="padding-bottom: 88px">
-<h2 style="margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Ce que j'aimerais observer en agence</h2>
-<p style="margin: 8px 0 32px; max-width: 64ch; color: #4A504E">Trois mesures permettraient de confirmer ou d'écarter les quatre points.</p>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 12px">
-<div style="padding: 24px; border-radius: 18px; background: #F1F4F2"><p style="margin: 0; font-weight: 600; font-size: 19px">Passages en agence par compte ouvert</p></div>
-<div style="padding: 24px; border-radius: 18px; background: #F1F4F2"><p style="margin: 0; font-weight: 600; font-size: 19px">Part de dossiers complets au premier passage</p></div>
-<div style="padding: 24px; border-radius: 18px; background: #F1F4F2"><p style="margin: 0; font-weight: 600; font-size: 19px">Délai entre le dépôt du dossier et l'ouverture</p></div>
+<section class="section">
+<h2 class="section-title">Ce que j'aimerais observer en agence</h2>
+<p class="sec-intro">Trois mesures permettraient de confirmer ou d'écarter les quatre points.</p>
+<div class="cards-grid">
+<div class="obs"><p class="obs__text">Passages en agence par compte ouvert</p></div>
+<div class="obs"><p class="obs__text">Part de dossiers complets au premier passage</p></div>
+<div class="obs"><p class="obs__text">Délai entre le dépôt du dossier et l'ouverture</p></div>
 </div>
 </section>
 
-<section style="display: flex; flex-wrap: wrap; gap: 32px 64px; padding-bottom: 88px">
-<h2 style="flex: 1 1 240px; margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em">Méthode et limites</h2>
-<div style="flex: 999 1 520px; min-width: 0">
-<ol style="margin: 0; padding: 0 0 0 22px; display: flex; flex-direction: column; gap: 10px">
+<section class="split section">
+<h2 class="section-title split__aside">Méthode et limites</h2>
+<div class="split__body">
+<ol class="method-steps">
 <li>Recensement des étapes de vigilance client d'après la réglementation CEMAC de lutte contre le blanchiment et la ligne directrice COBAC n° 1-2025 sur l'identification de la clientèle.</li>
 <li>Modélisation du parcours supposé en BPMN, sur trois couloirs, avec les exceptions tracées à part.</li>
 <li>Repérage des attentes du client, notées F1 à F4 sur le schéma.</li>
 <li>Rédaction de cinq pistes en user stories, priorisées en MoSCoW, chacune avec un critère d'acceptation.</li>
 </ol>
-<div style="margin-top: 24px; padding: 20px 24px; border-radius: 16px; border: 1px solid #E3E5E1; background: #FFFFFF">
-<p style="margin: 0; font-weight: 600">Limites</p>
-<p style="margin: 6px 0 0; font-size: 15px; color: #4A504E">Aucune donnée interne de banque n'a été utilisée. Le parcours est supposé et doit être confirmé avec un conseiller avant toute décision. Les pistes sont des bases de discussion, pas des recommandations.</p>
+<div class="callout">
+<p class="callout__title">Limites</p>
+<p class="callout__text">Aucune donnée interne de banque n'a été utilisée. Le parcours est supposé et doit être confirmé avec un conseiller avant toute décision. Les pistes sont des bases de discussion, pas des recommandations.</p>
 </div>
 </div>
 </section>
 
-<section style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 24px; padding: 32px; margin-bottom: 56px; border-radius: 24px; background: #FFFFFF; border: 1px solid #E3E5E1">
+<section class="cta-section">
+<div class="cta-box">
 <div>
-<p style="margin: 0; font-weight: 600; font-size: 20px">L'étude complète</p>
-<p style="margin: 4px 0 0; font-size: 15px; color: #5B6160">2 pages A4 : schéma BPMN, points à vérifier, user stories, méthode.</p>
+<p class="cta-box__title">L'étude complète</p>
+<p class="cta-box__sub">2 pages A4 : schéma BPMN, points à vérifier, user stories, méthode.</p>
 </div>
-<a href="#" class="btn btn-main" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #3F6B57; color: #FFFFFF; text-decoration: none; font-weight: 500; font-size: 16px">Télécharger le PDF</a>
+<a href="#" class="btn btn--main">Télécharger le PDF</a>
+</div>
 </section>
 
 <ProjectNav
@@ -309,3 +311,49 @@ import ProjectNav from '../components/ProjectNav.astro';
 />
 
 </BaseLayout>
+
+<style>
+.schema-head { margin-bottom: 24px; }
+.schema-head__sub { margin: 8px 0 0; max-width: 62ch; color: var(--color-text-muted); }
+.schema-fig {
+  margin: 0;
+  padding: 32px;
+  border-radius: var(--radius-card);
+  background: var(--color-surface-muted);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  align-items: flex-start;
+}
+.schema-fig__canvas { flex: 999 1 560px; min-width: 0; overflow-x: auto; }
+.bpmn-tall { display: block; width: 100%; min-width: 560px; max-width: 760px; height: auto; margin: 0 auto; font-family: var(--font-sans); }
+
+.legend { flex: 1 1 220px; min-width: 0; font-size: 15px; }
+.legend__title { margin: 0; font-weight: 600; }
+.legend__list { list-style: none; margin: 12px 0 0; padding: 0; display: flex; flex-direction: column; gap: 12px; color: var(--color-text-muted); }
+.legend__item { display: flex; align-items: center; gap: 12px; }
+.legend__swatch { flex: none; }
+.legend__swatch--start { width: 18px; height: 18px; border-radius: 50%; border: 2px solid var(--color-accent); box-sizing: border-box; }
+.legend__swatch--end { width: 18px; height: 18px; border-radius: 50%; border: 4px solid var(--color-ink); box-sizing: border-box; }
+.legend__swatch--decision { width: 14px; height: 14px; margin: 0 2px; transform: rotate(45deg); background: var(--color-accent-soft); border: 1.5px solid var(--color-accent); }
+.legend__swatch--exception { width: 18px; height: 0; border-top: 2px dashed #8A918D; }
+.legend__swatch--f { display: inline-flex; align-items: center; justify-content: center; width: 28px; height: 20px; border-radius: 10px; background: #8A5A44; color: #FFFFFF; font-size: 11px; font-weight: 600; }
+
+.f-badge { display: inline-flex; align-items: center; justify-content: center; width: 32px; height: 22px; border-radius: 11px; background: #8A5A44; color: #FFFFFF; font-size: 12px; font-weight: 600; }
+
+.moscow-pills { margin: 0; display: flex; gap: 8px; font-size: 13px; }
+
+.us-list { display: flex; flex-direction: column; gap: 12px; }
+.us { display: flex; flex-wrap: wrap; gap: 16px 32px; padding: 24px; border-radius: var(--radius-box); background: var(--color-surface); border: 1px solid var(--color-border); }
+.us__meta { flex: 0 0 170px; margin: 0; display: flex; flex-wrap: wrap; align-content: flex-start; gap: 8px; }
+.us__id { font-family: var(--font-mono); font-size: 13px; font-weight: 500; padding: 3px 0; }
+.us__body { flex: 1 1 400px; min-width: 0; }
+.us__body p { margin: 0; }
+.us__crit { margin: 10px 0 0; font-size: 15px; color: var(--color-text-muted); }
+.us__crit-label { font-weight: 600; color: var(--color-ink); }
+
+.obs { padding: 24px; border-radius: var(--radius-box); background: var(--color-surface-muted); }
+.obs__text { margin: 0; font-weight: 600; font-size: 19px; }
+
+.cta-section { margin-bottom: 56px; }
+</style>

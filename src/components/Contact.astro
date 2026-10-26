@@ -1,11 +1,59 @@
-<section id="contact" style="display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: 32px; padding: 56px; border-radius: 28px; background: #22302A; color: #FFFFFF">
-<div style="flex: 1 1 340px; min-width: 0">
-<h2 style="margin: 0; font-weight: 600; font-size: 40px; line-height: 1.1; letter-spacing: -0.025em">Parlons de vos projets</h2>
-<p style="margin: 14px 0 0; max-width: 46ch; color: #C9D5CE">Un stage, un projet ou une question : écrivez-moi. Le CV complet est disponible en PDF.</p>
+<section id="contact" class="contact">
+<div class="contact__intro">
+<h2 class="contact__title">Parlons de vos projets</h2>
+<p class="contact__text">Un stage, un projet ou une question : écrivez-moi. Le CV complet est disponible en PDF.</p>
 </div>
-<div style="display: flex; flex-wrap: wrap; gap: 12px">
-<a href="mailto:laijebalong@gmail.com" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; background: #FFFFFF; color: #17191A; text-decoration: none; font-weight: 500">laijebalong@gmail.com</a>
-<a href="https://wa.me/242069212360" style="display: inline-flex; align-items: center; gap: 10px; min-height: 50px; padding: 0 22px; border-radius: 999px; border: 1px solid #5C6E64; color: #FFFFFF; text-decoration: none"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5z" fill="#2F4239"></path><path d="M9 10.5c.4 1.7 1.8 3.1 3.5 3.5" stroke="#B9D6C4"></path></svg>WhatsApp</a>
-<a href="https://www.linkedin.com/in/laije-belthassar-balong" style="display: inline-flex; align-items: center; min-height: 50px; padding: 0 24px; border-radius: 999px; border: 1px solid #5C6E64; color: #FFFFFF; text-decoration: none">LinkedIn</a>
+<div class="contact__actions">
+<a href="mailto:laijebalong@gmail.com" class="contact__email">laijebalong@gmail.com</a>
+<a href="https://wa.me/242069212360" class="contact__link"><svg aria-hidden="true" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#FFFFFF" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3.5a8.5 8.5 0 0 0-7.4 12.7L3.5 20.5l4.4-1.1A8.5 8.5 0 1 0 12 3.5z" fill="#2F4239"></path><path d="M9 10.5c.4 1.7 1.8 3.1 3.5 3.5" stroke="#B9D6C4"></path></svg>WhatsApp</a>
+<a href="https://www.linkedin.com/in/laije-belthassar-balong" class="contact__link">LinkedIn</a>
 </div>
 </section>
+
+<style>
+.contact {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 32px;
+  padding: 56px;
+  border-radius: var(--radius-contact);
+  background: var(--color-dark);
+  color: var(--color-on-dark);
+}
+.contact__intro { flex: 1 1 340px; min-width: 0; }
+.contact__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.1;
+  letter-spacing: -0.025em;
+}
+.contact__text { margin: 14px 0 0; max-width: 46ch; color: var(--color-on-dark-muted); }
+.contact__actions { display: flex; flex-wrap: wrap; gap: 12px; }
+.contact__email,
+.contact__email:hover {
+  display: inline-flex;
+  align-items: center;
+  min-height: 50px;
+  padding: 0 24px;
+  border-radius: var(--radius-pill);
+  background: var(--color-on-dark);
+  color: var(--color-ink);
+  text-decoration: none;
+  font-weight: 500;
+}
+.contact__link,
+.contact__link:hover {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 50px;
+  padding: 0 22px;
+  border-radius: var(--radius-pill);
+  border: 1px solid #5C6E64;
+  color: var(--color-on-dark);
+  text-decoration: none;
+}
+</style>

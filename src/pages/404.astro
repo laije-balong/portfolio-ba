@@ -1,0 +1,37 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+<BaseLayout title="Page introuvable, Laije Belthassar BALONG">
+
+<section class="notfound">
+<p class="eyebrow eyebrow--accent notfound__eyebrow">Erreur 404</p>
+<h1 class="notfound__title">Page introuvable<span class="accent-dot">.</span></h1>
+<p class="notfound__text">Cette page n'existe pas ou a été déplacée. Revenez à l'accueil ou consultez les projets.</p>
+<div class="notfound__actions">
+<a href="/" class="btn btn--main">Retour à l'accueil</a>
+<a href="/projets" class="btn btn--line">Voir les projets</a>
+</div>
+</section>
+
+</BaseLayout>
+
+<style>
+.notfound {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+  padding: 120px 0 140px;
+  max-width: 60ch;
+}
+.notfound__eyebrow { font-size: 13px; }
+.notfound__title {
+  margin: 0;
+  font-weight: 600;
+  font-size: 68px;
+  line-height: 1.04;
+  letter-spacing: -0.035em;
+}
+.notfound__text { margin: 0; font-size: 20px; line-height: 1.5; color: var(--color-text-muted); }
+.notfound__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 12px; }
+</style>
