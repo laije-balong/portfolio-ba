@@ -26,7 +26,7 @@
 .contact__title {
   margin: 0;
   font-weight: 600;
-  font-size: 40px;
+  font-size: var(--fs-xl);
   line-height: 1.1;
   letter-spacing: -0.025em;
 }
@@ -55,5 +55,8 @@
   border: 1px solid #5C6E64;
   color: var(--color-on-dark);
   text-decoration: none;
+}
+@media (max-width: 640px) {
+  .contact { padding: 28px 24px; gap: 24px; }
 }
 </style>

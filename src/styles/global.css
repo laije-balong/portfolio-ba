@@ -1,5 +1,6 @@
 /* Base */
 body { margin: 0; background: var(--color-bg); }
+html { scroll-padding-top: 88px; }
 
 .page {
   background: var(--color-bg);
@@ -108,12 +109,12 @@ a:hover { color: var(--color-accent); }
   background: var(--color-surface);
   border: 1px solid var(--color-border);
 }
-.stat__num { margin: 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1; }
+.stat__num { margin: 0; font-weight: 600; font-size: var(--fs-num); letter-spacing: -0.03em; line-height: 1.1; }
 .stat__label { margin: 4px 0 0; font-size: 15px; color: var(--color-text-subtle); }
 
 /* Titres */
-.page-title { margin: 0; font-weight: 600; font-size: 56px; line-height: 1.06; letter-spacing: -0.03em; }
-.section-title { margin: 0; font-weight: 600; font-size: 32px; line-height: 1.15; letter-spacing: -0.02em; }
+.page-title { margin: 0; font-weight: 600; font-size: var(--fs-title); line-height: 1.06; letter-spacing: -0.03em; }
+.section-title { margin: 0; font-weight: 600; font-size: var(--fs-lg); line-height: 1.15; letter-spacing: -0.02em; }
 
 /* Rythme vertical des sections */
 .section { padding-bottom: var(--space-section); }
@@ -223,6 +224,20 @@ a:hover { color: var(--color-accent); }
 }
 .cta-box__title { margin: 0; font-weight: 600; font-size: 20px; }
 .cta-box__sub { margin: 4px 0 0; font-size: 15px; color: var(--color-text-subtle); }
+
+/* Ajustements mobile : espacements plus serrés */
+@media (max-width: 640px) {
+  :root {
+    --space-section: 56px;
+    --space-section-lg: 64px;
+  }
+  .container { padding: 0 18px; }
+  .pj-head { padding: 24px 0 36px; }
+  .cta-box { padding: 24px; }
+  .callout { padding: 18px 20px; }
+  .stat, .info-card { padding: 20px; }
+  .pj-info { padding: 12px; }
+}
 
 @media (prefers-reduced-motion: reduce) {
   .card, .btn, .lnk, .chip { transition: none; }

@@ -117,7 +117,7 @@ import ProjectNav from '../components/ProjectNav.astro';
 <section class="split section">
 <h2 class="section-title split__aside">Mon rôle</h2>
 <div class="split__body">
-<p class="q-lead">Lead Business Analyst d'une squad de 9, j'ai co-rédigé avec Darchina Mabika Ivora, Business Analyst, l'ensemble du dossier d'analyse, à partir du mini-PRD et de la discovery du PM, Divin Bakala.</p>
+<p class="q-lead">Lead Business Analyst d'une squad de 9, j'ai co-rédigé avec Darchina Mabika Ivora, Business Analyst, l'ensemble du dossier d'analyse, à partir du mini-PRD et de la discovery du PM, de l'equipe</p>
 <ul class="role-list">
 <li class="role-list__item"><span class="role-list__dot" aria-hidden="true"></span><span>Business Case, BRD et FRD, du problème aux règles de gestion.</span></li>
 <li class="role-list__item"><span class="role-list__dot" aria-hidden="true"></span><span>User stories avec critères d'acceptation, priorisées en MoSCoW.</span></li>
@@ -291,7 +291,7 @@ import ProjectNav from '../components/ProjectNav.astro';
 .problem__text { margin: 12px 0 0; color: var(--color-text-muted); }
 .cost { flex: 2 1 480px; min-width: 0; margin: 0; padding: 28px; border-radius: var(--radius-card); background: var(--color-surface); border: 1px solid var(--color-border); }
 .cost__label { margin: 0; font-size: 15px; color: var(--color-text-subtle); }
-.cost__amount { margin: 6px 0 0; font-weight: 600; font-size: 40px; letter-spacing: -0.03em; line-height: 1.1; }
+.cost__amount { margin: 6px 0 0; font-weight: 600; font-size: var(--fs-num); letter-spacing: -0.03em; line-height: 1.1; }
 .cost__unit { font-weight: 400; font-size: 18px; color: var(--color-text-muted); letter-spacing: 0; }
 .cost__bar { display: flex; gap: 4px; height: 44px; margin-top: 20px; }
 .cost__seg { display: flex; align-items: center; padding: 0 14px; border-radius: 10px; font-size: 14px; font-weight: 500; }
@@ -386,4 +386,9 @@ import ProjectNav from '../components/ProjectNav.astro';
 .decision__eyebrow { margin: 0; font-family: var(--font-mono); font-size: 12px; color: #B8C7BE; }
 .decision__verdict { margin: 6px 0 0; font-weight: 600; font-size: 28px; line-height: 1.2; letter-spacing: -0.02em; }
 .decision__text { margin: 10px 0 0; max-width: 60ch; color: var(--color-on-dark-muted); }
+
+@media (max-width: 640px) {
+  .cost, .answer, .trace, .panel { padding: 20px; }
+  .decision { padding: 24px; }
+}
 </style>

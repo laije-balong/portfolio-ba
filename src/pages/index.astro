@@ -17,11 +17,8 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 </div>
 </div>
 <figure class="hero__figure">
-<div class="photo-ph" role="img" aria-label="Emplacement de la photo de Laije Belthassar BALONG">
-<svg aria-hidden="true" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="#17191A" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="9" r="3.8" fill="#FFFFFF"></circle><path d="M4.5 20.5c0-4.1 3.4-7 7.5-7s7.5 2.9 7.5 7" fill="#FFFFFF"></path><path d="M9.5 20.5h5" stroke="#3F6B57"></path></svg>
-<span class="photo-ph__note">[Votre photo, format 4 x 5]</span>
-</div>
-<figcaption class="hero__caption"><span>Laije Belthassar BALONG</span><span>Brazzaville</span></figcaption>
+<img class="hero__photo" src="/images/laije-balong.webp" width="320" height="400" alt="Portrait de Laije Belthassar BALONG, Business Analyst" decoding="async" />
+<figcaption class="hero__caption"><span>Laije Belthassar BALONG</span></figcaption>
 </figure>
 </section>
 
@@ -256,23 +253,21 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 /* Hero */
 .hero { display: flex; flex-wrap: wrap; align-items: center; gap: 48px 64px; padding: 88px 0; }
 .hero__main { flex: 999 1 520px; min-width: 0; }
-.hero__title { margin: 0; max-width: 16ch; font-weight: 600; font-size: 68px; line-height: 1.04; letter-spacing: -0.035em; }
+.hero__title { margin: 0; max-width: 16ch; font-weight: 600; font-size: var(--fs-display); line-height: 1.04; letter-spacing: -0.035em; }
 .hero__lead { margin: 28px 0 0; max-width: 56ch; font-size: 21px; line-height: 1.5; color: var(--color-ink); }
 .hero__sub { margin: 16px 0 0; max-width: 56ch; font-size: 17px; color: var(--color-text-muted); }
 .hero__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 36px; }
 .hero__figure { flex: 0 1 300px; max-width: 300px; margin: 0; }
-.photo-ph {
+.hero__photo {
+  display: block;
+  width: 100%;
   aspect-ratio: 4 / 5;
+  object-fit: cover;
+  object-position: center top;
   border-radius: 28px;
-  background: var(--color-surface-muted);
   border: 1px solid var(--color-border);
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  gap: 14px;
+  background: var(--color-surface-muted);
 }
-.photo-ph__note { font-family: var(--font-mono); font-size: 12px; color: var(--color-text-subtle); }
 .hero__caption { display: flex; justify-content: space-between; gap: 12px; margin-top: 12px; font-family: var(--font-mono); font-size: 12px; color: var(--color-text-subtle); }
 
 /* Méthode */
@@ -302,7 +297,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 /* Bloc Projets de l'accueil */
 .home-projets { padding-bottom: var(--space-section-lg); }
 .home-head { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: flex-end; gap: 16px; margin-bottom: 32px; }
-.home-h2 { margin: 0; font-weight: 600; font-size: 40px; line-height: 1.1; letter-spacing: -0.025em; }
+.home-h2 { margin: 0; font-weight: 600; font-size: var(--fs-xl); line-height: 1.1; letter-spacing: -0.025em; }
 .home-head__link { font-size: 15px; }
 .home-cards { display: flex; flex-direction: column; gap: 20px; }
 
@@ -342,7 +337,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 .recette__label { margin: 0; font-size: 13px; color: var(--color-text-subtle); }
 .recette__foot { margin: 14px 0 0; padding-top: 12px; border-top: 1px solid var(--color-border); font-size: 14px; color: var(--color-text-muted); }
 .kpi-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 16px; }
-.kpi__num { margin: 6px 0 0; font-weight: 600; font-size: 34px; letter-spacing: -0.03em; line-height: 1.1; }
+.kpi__num { margin: 6px 0 0; font-weight: 600; font-size: clamp(1.75rem, 5.5vw, 2.125rem); letter-spacing: -0.03em; line-height: 1.1; }
 
 /* Bloc Parcours de l'accueil */
 .home-parcours { padding-bottom: var(--space-section-lg); }
@@ -364,4 +359,14 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 .timeline__role { margin: 0; font-weight: 600; }
 .timeline__org { margin: 0; font-size: 15px; color: var(--color-text-subtle); }
 .timeline__detail { margin: 8px 0 0; font-size: 15px; }
+
+@media (max-width: 640px) {
+  .hero { gap: 32px; padding: 40px 0 48px; }
+  .hero__figure { flex-basis: 220px; max-width: 220px; }
+  .hero__actions { gap: 10px; }
+  .method { padding: 24px; }
+  .proj-card { gap: 20px; padding: 16px; }
+  .proj-card__media, .proj-card__panel { padding: 18px; }
+  .proj-card__text, .proj-card__text--reverse { padding: 4px; }
+}
 </style>
