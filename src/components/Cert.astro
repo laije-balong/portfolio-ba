@@ -1,5 +1,6 @@
 ---
 import { existsSync } from 'node:fs';
+import { join } from 'node:path';
 
 interface Props {
   title: string;
@@ -14,7 +15,7 @@ const { title, issuer, logo, platform, platformLogo, note, muted = false } = Ast
 
 // Le logo officiel n'est affiché que si le fichier a été déposé dans public/logos.
 // Sinon, on retombe proprement sur une pastille texte, sans image cassée.
-const logoExists = (file?: string) => !!file && existsSync(new URL(`../../public/logos/${file}`, import.meta.url));
+const logoExists = (file?: string) => !!file && existsSync(join(process.cwd(), 'public', 'logos', file));
 const hasIssuerLogo = logoExists(logo);
 const hasPlatformLogo = logoExists(platformLogo);
 
